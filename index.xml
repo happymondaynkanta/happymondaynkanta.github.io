@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Huining Li</title>
-    <link>https://huining-li.github.io/</link>
-    <description>Recent content on Huining Li</description>
+    <title>Happy Nkanta Monday, PhD</title>
+    <link>https://happymondaynkanta.github.io/</link>
+    <description>Recent content on Happy Nkanta Monday</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://huining-li.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://happymondaynkanta.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link></link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid></guid>
-      <description>Huining joined NC State CSC department and will teach CSC 591/791 Mobile Health Systems and Applications in Fall 2024. Welcome to take my course!</description>
+      <description>Happy joined Chengdu University of Technology Oxford Brookes University, Sino-British Educational Programme Computing department and will teach CSC 591/791 Mobile Health Systems and Applications in Fall 2024. Welcome to take my course!</description>
     </item>
     
     <item>
@@ -622,7 +622,7 @@ recurrence relations, mathematical induction, graphs, trees, basic counting theo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid></guid>
-      <description>I am an Assistant Professor of Department of Computer Science in the North Carolina State University. I am looking for highly motivated Ph.D. students/interns/visiting students to join my lab. I received my Ph.D. degree from the Department of Computer Science and Engineering, University at Buffalo, working with Dr. Wenyao Xu. My research interest lies broadly in mobile computing, internet-of-things, and cybersecurity. Especially, my recent focus is on applying research advancement to the field of mobile health (a.</description>
+      <description>I am a Senior Research and Assistant Professor of the Computing Department at Chengdu University of Technology Oxford Brookes University.I received my Ph.D. degree from the Department of Computer Science and Engineering, University of Electronic Science and Technology of China. My research interest lies broadly in Artificial Intelligence, Medical Image Processing, Bioinformatics, Computer Vision, and Machine Learning. Especially, my recent focus is on applying deep learning algorithms to the field of medical image processing and bioinformatics (a.</description>
     </item>
     
   </channel>
