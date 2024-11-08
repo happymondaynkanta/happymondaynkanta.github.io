@@ -33,6 +33,24 @@
       <guid></guid>
       <description>&lt;p&gt;This module covers the fundamentals of digital circuits and logic design. Students learn about binary systems, logic gates, combinational and sequential circuits, and how to design and analyze digital systems. This foundational knowledge is essential for fields like electronics, computer engineering, and embedded systems.&lt;/p&gt;</description>
     </item>
+
+    <item>
+      <title></title>
+      <link></link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid></guid>
+      <description>&lt;p&gt;This module introduces the basics of computer networking and communication. Students learn about network topologies, protocols, and the OSI model, as well as foundational concepts in local and wide area networks (LAN/WAN). The course also covers practical skills in configuring and troubleshooting networked PCs.&lt;/p&gt;</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link></link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid></guid>
+      <description>&lt;p&gt;This module provides an overview of information security principles, covering essential topics like cryptography, network security, and risk management. Students learn about the fundamental tools and practices used to protect data integrity, confidentiality, and availability, crucial for roles in cybersecurity and IT.&lt;/p&gt;</description>
+    </item>
     
   </channel>
 </rss>
