@@ -66,19 +66,18 @@
     <h3>Data Processing</h3>
     To make ECG data compatible with deep learning models, we applied several preprocessing techniques using the <strong>Pan Tompkins algorithm</strong>
     <div class="item list-item">
-         -<p><strong>Bandpass Filtering:</strong> This step isolates the QRS complexes by removing both low- and high-frequency noise.</p>
+         <p><strong>Bandpass Filtering:</strong> This step isolates the QRS complexes by removing both low- and high-frequency noise.</p>
     </div>
     <div class="item list-item">
-         -<p><strong>Differentiation:</strong> This highlights the slopes of QRS complexes, emphasizing rapid changes in amplitude.</p>
+         <p><strong>Differentiation:</strong> This highlights the slopes of QRS complexes, emphasizing rapid changes in amplitude.</p>
     </div>
     <div class="item list-item">
-         -<p><strong>Squaring:</strong> By squaring the differentiated signal, the high amplitude regions corresponding to QRS complexes are emphasized.</p>
+         <p><strong>Squaring:</strong> By squaring the differentiated signal, the high amplitude regions corresponding to QRS complexes are emphasized.</p>
     </div>
     <div class="item list-item">
-         -<p><strong>Integration:</strong> A moving window integration is applied to further smooth the signal and highlight peaks, aiding in QRS complex detection.</p>
+         <p><strong>Integration:</strong> A moving window integration is applied to further smooth the signal and highlight peaks, aiding in QRS complex detection.</p>
     </div>
   
-
     For data balance, we applied <strong>Synthetic Minority Over-sampling Technique (SMOTE)</strong> to oversample underrepresented classes and downsample overrepresented classes. This resulted in a more balanced class distribution for model training.
 
     <h3>Feature Extraction and Transformation</h3>
