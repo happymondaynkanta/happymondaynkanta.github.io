@@ -61,12 +61,12 @@
     <p>To prepare the dataset for ECG-ECANet, we utilized well-established ECG datasets, primarily the MIT-BIH Arrhythmia Database and PTB-XL ECG dataset. 
 
     <h3>Collection and Labeling</h3>
-    The <strong>MIT-BIH Arrhythmia Database</strong> consists of 48 excerpts, each 30 minutes long, recorded from 47 subjects, including both inpatients and outpatients. These recordings were selected to represent both common and rare arrhythmias, ensuring a comprehensive dataset for training. Each recording was annotated with over 110,000 labels, validated by cardiologists for accuracy, making it a reliable dataset for arrhythmia detection. The **PTB-XL ECG dataset** is a larger clinical dataset, containing 12-lead ECG recordings from 18,869 patients. Each 10-second recording includes labels based on SCP-ECG standards, covering diagnostic, form, and rhythm statements, thus enabling multi-label classification.
+    The <strong>MIT-BIH Arrhythmia Database</strong> consists of 48 excerpts, each 30 minutes long, recorded from 47 subjects, including both inpatients and outpatients. These recordings were selected to represent both common and rare arrhythmias, ensuring a comprehensive dataset for training. Each recording was annotated with over 110,000 labels, and validated by cardiologists for accuracy, making it a reliable dataset for arrhythmia detection. The <strong>PTB-XL ECG dataset</strong> is a larger clinical dataset, containing 12-lead ECG recordings from 18,869 patients. Each 10-second recording includes labels based on SCP-ECG standards, covering diagnostic, form, and rhythm statements, thus enabling multi-label classification.
 
     <h3>Data Processing</h3>
-    To make ECG data compatible with deep learning models, we applied several preprocessing techniques using the **Pan Tompkins algorithm**:
+    To make ECG data compatible with deep learning models, we applied several preprocessing techniques using the <strong>Pan Tompkins algorithm</strong>
     - <strong>Bandpass Filtering:</strong> This step isolates the QRS complexes by removing both low- and high-frequency noise.
-    - <strong>Differentiation:</strong>**: This highlights the slopes of QRS complexes, emphasizing rapid changes in amplitude.
+    - <strong>Differentiation:</strong> This highlights the slopes of QRS complexes, emphasizing rapid changes in amplitude.
     - <strong>Squaring:</strong> By squaring the differentiated signal, the high amplitude regions corresponding to QRS complexes are emphasized.
     - <strong>Integration:</strong> A moving window integration is applied to further smooth the signal and highlight peaks, aiding in QRS complex detection.
 
