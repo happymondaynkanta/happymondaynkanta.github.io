@@ -60,25 +60,25 @@
     <h2>How did we collect and label the dataset for ECG-ECANet?</h2>
     <p>To prepare the dataset for ECG-ECANet, we utilized well-established ECG datasets, primarily the MIT-BIH Arrhythmia Database and PTB-XL ECG dataset. 
 
-### Collection and Labeling
-The **MIT-BIH Arrhythmia Database** consists of 48 excerpts, each 30 minutes long, recorded from 47 subjects, including both inpatients and outpatients. These recordings were selected to represent both common and rare arrhythmias, ensuring a comprehensive dataset for training. Each recording was annotated with over 110,000 labels, validated by cardiologists for accuracy, making it a reliable dataset for arrhythmia detection. The **PTB-XL ECG dataset** is a larger clinical dataset, containing 12-lead ECG recordings from 18,869 patients. Each 10-second recording includes labels based on SCP-ECG standards, covering diagnostic, form, and rhythm statements, thus enabling multi-label classification.
+    <h3>Collection and Labeling</h3>
+    The <strong>>MIT-BIH Arrhythmia Database</strong> consists of 48 excerpts, each 30 minutes long, recorded from 47 subjects, including both inpatients and outpatients. These recordings were selected to represent both common and rare arrhythmias, ensuring a comprehensive dataset for training. Each recording was annotated with over 110,000 labels, validated by cardiologists for accuracy, making it a reliable dataset for arrhythmia detection. The **PTB-XL ECG dataset** is a larger clinical dataset, containing 12-lead ECG recordings from 18,869 patients. Each 10-second recording includes labels based on SCP-ECG standards, covering diagnostic, form, and rhythm statements, thus enabling multi-label classification.
 
-### Data Processing
-To make ECG data compatible with deep learning models, we applied several preprocessing techniques using the **Pan Tompkins algorithm**:
-- **Bandpass Filtering**: This step isolates the QRS complexes by removing both low- and high-frequency noise.
-- **Differentiation**: This highlights the slopes of QRS complexes, emphasizing rapid changes in amplitude.
-- **Squaring**: By squaring the differentiated signal, the high amplitude regions corresponding to QRS complexes are emphasized.
-- **Integration**: A moving window integration is applied to further smooth the signal and highlight peaks, aiding in QRS complex detection.
+    <h3>Data Processing</h3>
+    To make ECG data compatible with deep learning models, we applied several preprocessing techniques using the **Pan Tompkins algorithm**:
+    - **Bandpass Filtering**: This step isolates the QRS complexes by removing both low- and high-frequency noise.
+    - **Differentiation**: This highlights the slopes of QRS complexes, emphasizing rapid changes in amplitude.
+    - **Squaring**: By squaring the differentiated signal, the high amplitude regions corresponding to QRS complexes are emphasized.
+    - **Integration**: A moving window integration is applied to further smooth the signal and highlight peaks, aiding in QRS complex detection.
 
-For data balance, we applied **Synthetic Minority Over-sampling Technique (SMOTE)** to oversample underrepresented classes and downsample overrepresented classes. This resulted in a more balanced class distribution for model training.
+    For data balance, we applied **Synthetic Minority Over-sampling Technique (SMOTE)** to oversample underrepresented classes and downsample overrepresented classes. This resulted in a more balanced class distribution for model training.
 
-### Feature Extraction and Transformation
-Given that different segments of the ECG waveform (e.g., P-wave, QRS complex, T-wave) contain critical diagnostic information, we leveraged **wavelet transforms (CWT)** to extract features from various scales. Using a **complex Morlet wavelet**, we extracted multi-scale features from the ECG signals to provide a richer representation for classification tasks. Additionally, we implemented segmentation schemes for the 12-lead ECG data by dividing records into multiple image segments that retain essential waveform information without losing diagnostic details.
+    <h3>Feature Extraction and Transformation</h3>
+    Given that different segments of the ECG waveform (e.g., P-wave, QRS complex, T-wave) contain critical diagnostic information, we leveraged **wavelet transforms (CWT)** to extract features from various scales. Using a **complex Morlet wavelet**, we extracted multi-scale features from the ECG signals to provide a richer representation for classification tasks. Additionally, we implemented segmentation schemes for the 12-lead ECG data by dividing records into multiple image segments that retain essential waveform information without losing diagnostic details.
 
-### Image Standardization and Augmentation
-For 12-lead ECG data, we converted signals into images, applying techniques such as **standardization** to adjust the amplitude range and maintain uniform data representation. We also experimented with image transformations, including color inversion, histogram equalization, and wavelet-based filtering. Data augmentation techniques, such as adjusting image brightness and contrast, further enriched the dataset, enhancing the robustness of ECG-ECANet.
+    <h3>Image Standardization and Augmentation</h3>
+    For 12-lead ECG data, we converted signals into images, applying techniques such as **standardization** to adjust the amplitude range and maintain uniform data representation. We also experimented with image transformations, including color inversion, histogram equalization, and wavelet-based filtering. Data augmentation techniques, such as adjusting image brightness and contrast, further enriched the dataset, enhancing the robustness of ECG-ECANet.
 
-This comprehensive data collection, labeling, and processing pipeline ensures that ECG-ECANet can accurately detect and interpret heart disease indicators across a diverse range of ECG datasets, supporting complex, multi-label classification tasks.</p>
+    This comprehensive data collection, labeling, and processing pipeline ensures that ECG-ECANet can accurately detect and interpret heart disease indicators across a diverse range of ECG datasets, supporting complex, multi-label classification tasks.</p>
 
     <!-- Add additional project details here -->
 
