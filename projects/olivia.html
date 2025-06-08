@@ -1,64 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IABiLSTM-NET Deep Learning Model for Predicting Solar Cell Degradation using Thermal Images | Happy Nkanta Monday</title>
-    <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
-  
-    <style>
-        .project-header {
-            text-align: center;
-            background-color: #d9534f;
-            color: #fff;
-            padding: 20px;
-            font-size: 2em;
-        }
-        .content-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .button-group {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-group a {
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #d9534f;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .button-group a:hover {
-            background-color: #c9302c;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IABiLSTM-NET | Predicting Solar Cell Degradation | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 2.3em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
 
 <div class="project-header">
-    IABiLSTM-NET Deep Learning Model for Predicting Solar Cell Degradation using Thermal Images
+  IABiLSTM-NET: Deep Learning Model for Predicting Solar Cell Degradation using Thermal Images
 </div>
 
 <div class="content-section">
-    <h2>Abstract</h2>
-    <p style="text-align: justify;">As global awareness of climate change grows, renewable energy sources like solar power have become increasingly important. Photovoltaic (PV) systems, which convert sunlight into electricity using solar cells, are widely used due to their sustainability, low maintenance costs, and ease of installation. However, PV panels often suffer from defects such as cracks, hot spots, and shading, which can significantly reduce energy conversion efficiency and, if left undetected, lead to system failure. To address this, the project proposes a deep learning classification model that combines Inception modules, Attention mechanisms, and Bi-directional Long Short-Term Memory (BiLSTM) to detect solar panel defects from thermal infrared images. The model is trained and evaluated on a public dataset containing 5,352 thermal images of solar panels, with labels indicating the presence or absence of thermal defects. Three data partitioning strategies (80:10:10, 70:20:10, and 60:20:20) are applied to assess model performance under different validation conditions. Evaluation metrics include Accuracy, Loss, Precision, Recall (Sensitivity), Specificity, F1-Score, and AUC-ROC. The proposed model achieved an accuracy of 91.56%, an AUC of 0.9677, and an F1-Score of 95.33%. Furthermore, a user-friendly graphical interface has been developed to allow users to upload thermal images and receive instant classification results. This system enhances defect detection efficiency, supports preventive maintenance, extends panel lifespan, and reduces long-term operational costs in solar energy systems.</p>
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Introduced the IABiLSTM-NET architecture combining Inception modules, Attention mechanisms, and BiLSTM layers.</li>
+    <li>Applied to 5,352 UAV-captured thermal images for solar panel defect classification with 91.56% accuracy.</li>
+    <li>Developed a user-friendly GUI application for real-time thermal image classification and diagnostics.</li>
+    <li>Implemented a rigorous validation framework with multiple train-validation-test splits.</li>
+  </ul>
 
-    <div class="button-group">
-        <a href="https://happymondaynkanta.github.io/poster/Olivia_Poster.pdf" download>Download Poster</a>
-        <a href="path/to/dataset.zip" download>Download the Dataset</a>
-    </div>
+  <h2>Conclusion</h2>
+  <p>
+    The IABiLSTM-NET model demonstrates significant potential for early fault detection in solar energy systems. By combining spatial feature extraction with temporal attention, the model accurately classifies defective panels and supports efficient solar farm maintenance. The integration of an interactive GUI further enhances practical applicability in field conditions.
+  </p>
 
- <!-- Add additional project details here -->
+  <h2>Limitation</h2>
+  <p>
+    Despite its high accuracy, the model’s performance may degrade when deployed on vastly different thermal datasets due to environmental variations. Further, the reliance on UAV-captured data may limit applicability in small-scale or ground-based installations.
+  </p>
 
+  <h2>Future Work</h2>
+  <p>
+    Future extensions include incorporating multi-spectral image analysis, real-time cloud deployment with edge AI support, and integrating life-cycle cost analysis for predictive maintenance. Cross-domain transfer learning and federated learning will also be explored to generalize performance across varying regions.
+  </p>
+
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Gao Rui (Olivia) is passionate about sustainable energy and AI for environmental applications. Olivia led this project under the mentorship of Dr. Happy Nkanta Monday, driven by her vision to make renewable systems smarter and self-monitoring. She aspires to develop AI-driven robotics for remote environmental diagnostics.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Olivia_Poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/dataset.zip" download>📁 Download Dataset</a>
+  </div>
 </div>
+
+<footer>
+  ☀️ A Project by CDUT's AI for Smart Energy Research Group | Guided by Dr. Happy Nkanta Monday | ⚡ Empowering Renewable Intelligence through Deep Learning
+</footer>
 
 <script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
-
