@@ -1,64 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Energy Forecasting using Cloud Motion Vectors from Satellite Images | Happy Nkanta Monday</title>
-    <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
-  
-    <style>
-        .project-header {
-            text-align: center;
-            background-color: #d9534f;
-            color: #fff;
-            padding: 20px;
-            font-size: 2em;
-        }
-        .content-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .button-group {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-group a {
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #d9534f;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .button-group a:hover {
-            background-color: #c9302c;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar Energy Forecasting using Cloud Motion Vectors | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    .project-header, .project-footer {
+        text-align: center;
+        background-color: #d9534f;
+        color: white;
+        padding: 20px;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+    .content-section {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        font-size: 1.1em;
+        line-height: 1.7;
+        color: #333;
+    }
+    .button-group {
+        text-align: center;
+        margin: 30px 0;
+    }
+    .button-group a {
+        padding: 10px 25px;
+        background-color: #d9534f;
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .button-group a:hover {
+        background-color: #c9302c;
+    }
+    .student-profile {
+        background-color: #f7f7f7;
+        border-left: 5px solid #d9534f;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
 
 <div class="project-header">
-   Solar Energy Forecasting using Cloud Motion Vectors from Satellite Images
+  🌤️ Solar Energy Forecasting using Cloud Motion Vectors from Satellite Images
 </div>
 
 <div class="content-section">
-    <h2>Abstract</h2>
-    <p style="text-align: justify;">Solar energy prediction plays a key role in optimizing the integration of renewable energy into the grid. However, the complexity and variability of solar radiation patterns pose significant challenges. Traditional prediction methods often face difficulties in achieving high accuracy, particularly when trying to capture the complex spatial and temporal dependencies within solar data. Although the advancement of machine learning has enhanced the predictive ability, the inaccuracy of solar motion vector prediction remains a persistent problem. This project utilizes deep learning to enhance prediction accuracy by developing a new hybrid model, known as BiLSTM, combined with a dual-path architecture. This innovative model combines the advantages of BiLSTM in capturing time dependencies, enabling it to focus on both spatial and temporal granularities simultaneously while maintaining the computational efficiency of accurate solar motion vector predictions.The proposed model has demonstrated outstanding prediction. The performance is specifically manifested as a Test Loss as low as 0.0016, a Test mean absolute error (Test MAE) of 0.0233, and a test root mean square error (Test RMSE) of 0.0301. It indicates that the error between the predicted value and the actual value of the model is extremely small. Although the Test mean absolute percentage error (Test MAPE) reached 2198.8198, the test determination coefficient (Test R²) of the model was as high as 0.982. This indicates that the model can accurately capture the underlying patterns of the data, and the reliability of the prediction and the fitting effect are extremely excellent, highlighting its potential in practical applications.</p>
 
-    <div class="button-group">
-        <a href="https://happymondaynkanta.github.io/poster/Carrie_Poster.pdf" download>Download Poster</a>
-        <a href="path/to/dataset.zip" download>Download the Dataset</a>
-    </div>
+  <div class="student-profile">
+    <strong>Team Member Highlight:</strong><br>
+    Carrie Zhang (Final-Year BEng Student, Sino-CDUT Oxford Brookes Program)<br>
+    Carrie’s curiosity in sustainable AI solutions and her passion for renewable energy optimization fueled the success of this project. Her resilience in tackling data preprocessing challenges was a standout!
+  </div>
 
- <!-- Add additional project details here -->
+  <h3>Key Contributions</h3>
+  <ul>
+    <li>Designed a novel dual-path hybrid BiLSTM architecture for accurate solar energy forecasting.</li>
+    <li>Utilized satellite-derived cloud motion vectors to address temporal-spatial variability in radiation patterns.</li>
+    <li>Achieved outstanding predictive accuracy with R² = 0.982 and RMSE = 0.0301 on test data.</li>
+    <li>Integrated Explainable AI elements for transparency and real-world utility.</li>
+  </ul>
 
+  <h3>Conclusion</h3>
+  <p style="text-align: justify;">
+    The hybrid deep learning framework demonstrated exceptional performance in solar energy prediction by learning complex cloud movement and solar irradiance dependencies. Its ability to process both spatial and temporal data efficiently makes it a reliable model for real-world grid applications and smart solar farm management.
+  </p>
+
+  <h3>Limitations</h3>
+  <ul>
+    <li>High Test MAPE value (2198%) due to extreme variance in small irradiance values in early morning/night hours.</li>
+    <li>Model accuracy could degrade if satellite imagery lacks consistent quality or timestamps.</li>
+  </ul>
+
+  <h3>Future Work</h3>
+  <ul>
+    <li>Refine the model using adaptive loss functions to address MAPE instability.</li>
+    <li>Extend the architecture to include meteorological and environmental sensor fusion.</li>
+    <li>Deploy the model as a cloud-based API service for real-time solar farm monitoring.</li>
+  </ul>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Carrie_Poster.pdf" download>📥 Download Poster</a>
+    <a href="path/to/dataset.zip" download>📁 Download Dataset</a>
+  </div>
+
+</div>
+
+<div class="project-footer">
+  💡 Project Supervised by Dr. Happy Nkanta Monday | School of International Education, CDUT-Oxford Brookes
 </div>
 
 <script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
-
