@@ -1,64 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LSTM-Based Multi-Head Attention Lightweight CNN Models for Pneumothorax Classification using Chest X-Ray Images | Happy Nkanta Monday</title>
-    <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
-  
-    <style>
-        .project-header {
-            text-align: center;
-            background-color: #d9534f;
-            color: #fff;
-            padding: 20px;
-            font-size: 2em;
-        }
-        .content-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .button-group {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-group a {
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #d9534f;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .button-group a:hover {
-            background-color: #c9302c;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LSTM-Based Multi-Head Attention Lightweight CNN Models for Pneumothorax Classification | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css" />
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f8f9fa;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #d9534f;
+      color: #fff;
+      padding: 25px 15px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .content-section {
+      max-width: 850px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      color: #333;
+      line-height: 1.7;
+    }
+    .content-section h3 {
+      color: #d9534f;
+      margin-top: 30px;
+    }
+    .button-group {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .button-group a {
+      padding: 12px 25px;
+      margin: 10px;
+      background-color: #d9534f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .button-group a:hover {
+      background-color: #c9302c;
+    }
+    .project-footer {
+      text-align: center;
+      background-color: #343a40;
+      color: white;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
 
 <div class="project-header">
-    LSTM-Based Multi-Head Attention Lightweight CNN Models for Pneumothorax Classification using Chest X-Ray Images
+  LSTM + Multi-Head Attention CNN for Pneumothorax Detection
 </div>
 
 <div class="content-section">
-    <h2>Abstract</h2>
-    <p style="text-align: justify;">This study develops a lightweight Convolutional Neural Network (CNN) model for pneumothorax detection in chest X-rays, targeting resource-limited healthcare environments. The proposed architecture integrates EfficientNetB2 for feature extraction, Long Short-Term Memory (LSTM) layers for sequential spatial modeling, and a Multi-Head Attention mechanism to enhance focus on critical regions. Trained on the SIIM-ACR Pneumothorax dataset (2,027 images), the model employs data augmentation, balancing, and preprocessing to address class imbalance and variability. The evaluation results demonstrate strong performance, achieving 86% accuracy, 93% recall, and a 0.91 AUC-ROC score, outperforming baseline models like ResNet-50 and MobileNet-v2. The model’s clinical applicability is further validated through Gradient-weighted Class Activation Mapping (Grad-CAM) visualizations, highlighting lesion-specific regions, and a user-friendly GUI for real-world deployment. By optimizing computational efficiency while maintaining diagnostic accuracy, this work bridges the gap between deep learning and practical medical applications, particularly in underserved regions. Ethical, legal, and environmental considerations, including GDPR compliance and energy-efficient design, are systematically addressed to ensure responsible AI deployment.</p>
+  <p><strong>Student Contributor:</strong> <em>Esme Zhang</em> – a dedicated machine learning enthusiast known for her precision and creativity in medical AI innovation.</p>
 
-    <div class="button-group">
-        <a href="https://happymondaynkanta.github.io/poster/Esme_poster.pdf" download>Download Poster</a>
-        <a href="path/to/dataset.zip" download>Download the Dataset</a>
-    </div>
+  <h3>🔑 Key Contributions</h3>
+  <ul>
+    <li>Designed a novel hybrid architecture combining EfficientNetB2, LSTM, and Multi-Head Attention mechanisms tailored for medical imaging.</li>
+    <li>Implemented a robust training pipeline using the SIIM-ACR Pneumothorax dataset, incorporating balancing strategies to tackle class imbalance.</li>
+    <li>Achieved outstanding results: 86% accuracy, 93% recall, and AUC-ROC of 0.91—outperforming established models like ResNet-50 and MobileNet-v2.</li>
+    <li>Integrated Grad-CAM to visualize the model’s focus on critical regions, enhancing transparency and trust in clinical environments.</li>
+    <li>Developed an intuitive, interactive GUI for hospital-friendly deployment of the model.</li>
+  </ul>
 
- <!-- Add additional project details here -->
+  <h3>📌 Conclusion</h3>
+  <p>This work underscores the feasibility of lightweight deep learning models for high-accuracy pneumothorax detection, particularly in resource-constrained settings. By leveraging attention-driven spatial modeling, the study provides a clinically relevant and ethically sound solution with great deployment potential.</p>
 
+  <h3>⚠️ Limitation</h3>
+  <ul>
+    <li>While the model generalizes well, it was trained solely on SIIM-ACR datasets, which may not reflect the full diversity of global clinical cases.</li>
+    <li>The sensitivity (~70%) can be further improved for early-stage or subtle pneumothorax signs.</li>
+  </ul>
+
+  <h3>🚀 Future Work</h3>
+  <ul>
+    <li>Incorporate federated learning across hospital datasets to enhance model robustness and generalizability.</li>
+    <li>Integrate voice-guided assistance into the GUI for visually impaired clinicians.</li>
+    <li>Expand classification beyond binary to include severity grading of pneumothorax.</li>
+  </ul>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Esme_poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/dataset.zip" download>📦 Download Dataset</a>
+  </div>
+</div>
+
+<div class="project-footer">
+  Developed with ❤️ by the AI Research Team | Supervised by Dr. Happy Nkanta Monday | CDUT-Oxford Brookes College
 </div>
 
 <script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
-
