@@ -1,64 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Residual-Based Dua Attention Ensemble Model for Diabetic Retinopathy Classification | Happy Nkanta Monday</title>
-    <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
-  
-    <style>
-        .project-header {
-            text-align: center;
-            background-color: #d9534f;
-            color: #fff;
-            padding: 20px;
-            font-size: 2em;
-        }
-        .content-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .button-group {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-group a {
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #d9534f;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .button-group a:hover {
-            background-color: #c9302c;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Residual-Based Dual Attention Ensemble Model for Diabetic Retinopathy Classification | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css" />
+  <style>
+    .project-header {
+      text-align: center;
+      background-color: #d9534f;
+      color: white;
+      padding: 20px;
+      font-size: 2em;
+    }
+    .content-section {
+      max-width: 850px;
+      margin: 20px auto;
+      padding: 25px;
+      line-height: 1.7;
+      font-size: 1.1em;
+      color: #333;
+    }
+    .footer {
+      text-align: center;
+      background-color: #f5f5f5;
+      color: #444;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+    }
+    .button-group {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .button-group a {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #d9534f;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .button-group a:hover {
+      background-color: #c9302c;
+    }
+  </style>
 </head>
 <body>
 
 <div class="project-header">
-   Residual-Based Dua Attention Ensemble Model for Diabetic Retinopathy Classification
+  Residual-Based Dual Attention Ensemble Model for Diabetic Retinopathy Classification
 </div>
 
 <div class="content-section">
-    <h2>Abstract</h2>
-    <p style="text-align: justify;">Diabetic Retinopathy is one of the common complications of diabetic patients, which can lead to vision loss or even blindness. Early detection and timely treatment are crucial for preventing vision loss. However, in real-world applications, DR classification tasks often face the challenge of imbalanced data distributions, where one class significantly outnumbers the others. Therefore, this project proposed on a novel ensemble learning model which combines ResNet50 and Dual attention method for Diabetic Retinopathy classification task trained on the pre-processed APTOS 2019 Blindness Detection datasets that were downloaded from Kaggle. The model outperformed the pre-training model with an Average Precision (AP) of 1 in the No DR class and an Area Under the Curve (AUC) of 0.97 in the Advanced class, 0.93 in the Mild class, 1 in the No DR class, and 0.96 in the Proliferative DR class, respectively. Besides, this project utilizes local interpretable Model Interpretation (LIME) as the interpretable AI tool. In conclusion, the integrated model that combines ResNet50 with the dual attention strategy proposed in this project performs admirably in the diabetic retinopathy classification test. It has a high potential for medical auxiliary diagnosis and exhibits strong discriminative ability and good interpretability, particularly under imbalanced data.</p>
+  <h2>Project Summary</h2>
+  <p style="text-align: justify;">
+    This project, spearheaded by <strong>Richard Chijioke</strong>, a passionate undergraduate researcher at Oxford Brookes College CDUT, addresses a critical need in medical imaging—early and accurate classification of Diabetic Retinopathy (DR). Given the challenges of imbalanced datasets and subtle retinal variations, the team developed a novel <strong>Residual-Based Dual Attention Ensemble model</strong> integrating <strong>ResNet50</strong> and spatial-channel attention mechanisms.
+  </p>
 
-    <div class="button-group">
-        <a href="https://happymondaynkanta.github.io/poster/Richard_Poster.pdf" download>Download Poster</a>
-        <a href="path/to/dataset.zip" download>Download the Dataset</a>
-    </div>
+  <h3>Key Contributions</h3>
+  <ul>
+    <li>Developed a powerful ensemble classification model combining ResNet50 and dual attention for DR staging.</li>
+    <li>Handled class imbalance effectively using smart augmentation and loss weighting strategies.</li>
+    <li>Achieved <strong>Average Precision (AP) = 1</strong> in the “No DR” class and high AUCs across other DR severity levels (up to 0.97).</li>
+    <li>Integrated Explainable AI via <strong>LIME</strong> to highlight model decision regions, aiding interpretability for clinicians.</li>
+  </ul>
 
- <!-- Add additional project details here -->
+  <h3>Conclusion</h3>
+  <p style="text-align: justify;">
+    The model demonstrates strong classification performance across multiple DR categories and offers explainable insights into prediction logic. Its accuracy and interpretability make it a valuable tool for aiding clinical decisions in real-world settings. The visualizations provided by LIME confirmed that the model focused on medically relevant retinal regions.
+  </p>
 
+  <h3>Limitations</h3>
+  <ul>
+    <li>The dataset, APTOS 2019, although reliable, lacks granularity in imaging conditions and camera variability.</li>
+    <li>The model performance in edge cases (e.g., borderline Moderate vs Severe DR) still requires improvement.</li>
+    <li>Real-time deployment and hardware compatibility were not fully explored.</li>
+  </ul>
+
+  <h3>Future Work</h3>
+  <ul>
+    <li>Extend the model to support multimodal imaging (OCT + Fundus).</li>
+    <li>Deploy as a mobile app for remote diabetic screening in underserved areas.</li>
+    <li>Explore lightweight model compression for real-time inference in low-resource environments.</li>
+  </ul>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Richard_Poster.pdf" download>Download Poster</a>
+    <a href="path/to/dataset.zip" download>Download Dataset</a>
+  </div>
+</div>
+
+<div class="footer">
+  Project by Richard Chijioke | Supervised by Dr. Happy Nkanta Monday | Oxford Brookes CDUT <br/>
+  Powered by TensorFlow, LIME, and Jupyter Notebook | Visit: happymondaynkanta.github.io
 </div>
 
 <script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
-
