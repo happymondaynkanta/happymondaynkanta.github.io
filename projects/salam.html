@@ -3,62 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiLSTM-Based Inception Multi-Head Attention Network for Predicting Solar Cell Degradation using Thermal Imaging | Happy Nkanta Monday</title>
+    <title>BiLSTM-Based Inception Multi-Head Attention Network | Happy Nkanta Monday</title>
     <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
-  
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         .project-header {
             text-align: center;
-            background-color: #d9534f;
+            background-color: #005f73;
             color: #fff;
-            padding: 20px;
-            font-size: 2em;
+            padding: 30px 10px;
+            font-size: 2.2em;
+            letter-spacing: 1px;
         }
         .content-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.6;
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            line-height: 1.7;
             color: #333;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0a9396;
+        }
+        p {
+            text-align: justify;
+        }
+        .student-profile {
+            background-color: #edf6f9;
+            padding: 15px;
+            border-left: 6px solid #0a9396;
+            margin-top: 30px;
+            font-style: italic;
         }
         .button-group {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .button-group a {
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin: 5px;
-            background-color: #d9534f;
+            background-color: #0a9396;
             color: #fff;
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s;
         }
         .button-group a:hover {
-            background-color: #c9302c;
+            background-color: #007f84;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 15px;
+            background-color: #001219;
+            color: #fff;
+            font-size: 0.95em;
         }
     </style>
 </head>
 <body>
 
 <div class="project-header">
-   BiLSTM-Based Inception Multi-Head Attention Network for Predicting Solar Cell Degradation using Thermal Imaging 
+    BiLSTM-Based Inception Multi-Head Attention Network for Predicting Solar Cell Degradation
 </div>
 
 <div class="content-section">
     <h2>Abstract</h2>
-    <p style="text-align: justify;">The degradation of solar cells is a critical factor affecting the efficiency and lifespan of photovoltaic (PV) systems. Detecting and diagnosing these degradations early can significantly improve the maintenance and operation of solar farms. This study proposes a novel approach using deep learning to predict solar cell degradation by analyzing thermal images captured via unmanned aerial vehicles (UAVs). A hybrid deep learning model combining Inception modules, Bidirectional LSTM layers, and Multi-Head Attention mechanisms is developed to process thermal imaging data and classify solar cell degradation into two categories: “defected” and “non-defected” degradation. The dataset consisted of thermal images of solar panels, preprocessed to standardize image size and enhance contrast for improved model performance. The proposed model demonstrated remarkable results, achieving an accuracy of 89.65%, precision of 93.67%, and recall of 85.05%. In addition, the model yielded an F1 score of 89.15% and an Area Under the ROC Curve (AUC) of 0.9613, indicating its effectiveness in distinguishing degraded panels from non-degraded ones. This research shows that combining advanced neural network architectures can significantly enhance the accuracy of solar cell degradation detection. The model’s success highlights its potential application in automated, large-scale solar farm inspections, providing a reliable and efficient tool for future predictive maintenance in the solar energy industry.</p>
+    <p>
+        The degradation of solar cells is a critical factor affecting the efficiency and lifespan of photovoltaic (PV) systems. 
+        Detecting and diagnosing these degradations early can significantly improve the maintenance and operation of solar farms. 
+        This study proposes a novel deep learning framework combining Inception modules, Bi-directional LSTM, and Multi-Head Attention 
+        to analyze UAV-captured thermal images of solar panels. The model classifies solar cells into “defected” and “non-defected” classes 
+        with impressive metrics: 89.65% accuracy, 93.67% precision, and 0.9613 AUC, making it suitable for real-time solar farm monitoring.
+    </p>
 
-    <div class="button-group">
-        <a href="https://happymondaynkanta.github.io/poster/Salam_Poster.pdf" download>Download Poster</a>
-        <a href="path/to/dataset.zip" download>Download the Dataset</a>
+    <h2>Key Contributions</h2>
+    <ul>
+        <li>Developed a hybrid CNN-BiLSTM-Attention model optimized for thermal image classification of solar cell defects.</li>
+        <li>Achieved robust results across multiple performance metrics (F1-Score: 89.15%, AUC: 0.9613).</li>
+        <li>Designed a user-friendly GUI for uploading and classifying panel images in real-time.</li>
+        <li>Introduced preprocessing techniques that enhance thermal image clarity for model learning.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+        The proposed IABiLSTM-Net model demonstrates strong potential for practical deployment in smart energy systems. 
+        By automating solar panel degradation detection, the system offers a low-cost, scalable, and accurate solution for 
+        long-term solar farm maintenance and energy efficiency improvement.
+    </p>
+
+    <h2>Limitation</h2>
+    <p>
+        Although effective, the model was trained on a relatively small dataset and evaluated on a single environmental condition. 
+        Variability in thermal image quality due to weather or camera resolution can affect model generalizability. Real-world deployment 
+        may also require hardware integration and calibration.
+    </p>
+
+    <h2>Future Work</h2>
+    <p>
+        Future improvements will focus on expanding the dataset with multi-weather images, incorporating multispectral data, and 
+        extending classification to include degrees of degradation. Integration with drone-based real-time inspection systems is 
+        also a promising direction.
+    </p>
+
+    <div class="student-profile">
+        <strong>👩‍💻 Student Researcher:</strong> Salam El-Yusuf, a final-year undergraduate in Artificial Intelligence at Chengdu University of Technology, 
+        conducted this project under the supervision of Dr. Happy Nkanta Monday. Salam is passionate about applying AI in sustainability, particularly in renewable energy.
     </div>
 
- <!-- Add additional project details here -->
-
+    <div class="button-group">
+        <a href="https://happymondaynkanta.github.io/poster/Salam_Poster.pdf" download>📄 Download Poster</a>
+        <a href="path/to/dataset.zip" download>📁 Download the Dataset</a>
+    </div>
 </div>
+
+<footer>
+    🚀 Developed by the CDUT AI Research Team | Supervised by Dr. Happy Nkanta Monday | 🌞 Empowering Clean Energy with AI 💡
+</footer>
 
 <script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
-
