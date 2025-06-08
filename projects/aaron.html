@@ -3,62 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classification of Diabetic Retinopathy using Residual Learning with a Custom Balanced Loss | Happy Nkanta Monday</title>
+    <title>Classification of Diabetic Retinopathy using Residual Learning | Happy Nkanta Monday</title>
     <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
-  
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         .project-header {
             text-align: center;
-            background-color: #d9534f;
+            background-color: #6a0572;
             color: #fff;
-            padding: 20px;
-            font-size: 2em;
+            padding: 30px 10px;
+            font-size: 2.2em;
+            letter-spacing: 0.5px;
         }
         .content-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.6;
+            max-width: 860px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #fefefe;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+            line-height: 1.75;
             color: #333;
+        }
+        h2 {
+            color: #6a0572;
+        }
+        p {
+            text-align: justify;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .student-profile {
+            background-color: #f3e8ff;
+            padding: 15px;
+            border-left: 5px solid #6a0572;
+            margin-top: 30px;
+            font-style: italic;
         }
         .button-group {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .button-group a {
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #d9534f;
+            padding: 12px 24px;
+            margin: 6px;
+            background-color: #6a0572;
             color: #fff;
             border-radius: 5px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
         .button-group a:hover {
-            background-color: #c9302c;
+            background-color: #4e0356;
+        }
+        footer {
+            text-align: center;
+            background-color: #2c003e;
+            color: #eee;
+            padding: 15px;
+            font-size: 0.9em;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
 <div class="project-header">
-   Classification of Diabetic Retinopathy using Residual Learning with a Custom Balanced Loss
+    Classification of Diabetic Retinopathy using Residual Learning with a Custom Balanced Loss
 </div>
 
 <div class="content-section">
     <h2>Abstract</h2>
-    <p style="text-align: justify;">Diabetic Retinopathy (DR) is a severe complication of diabetes that can lead to vision impairment or blindness, making early detection crucial. Traditional deep learning models often struggle with class imbalance in medical datasets, leading to poor performance for minority classes. This study proposes a novel deep learning model based on Residual Networks (ResNet) to address the multi-class classification of DR, with a focus on mitigating class imbalance. Standard Softmax activation functions tend to favor the majority classes, thereby worsening the model's performance on minority classes. To address this, the study incorporates a custom loss function, Balanced Softmax Loss, which adjusts class weights to improve the recognition of minority classes. Additionally, the model integrates advanced techniques such as Squeeze-and-Excitation (SE) blocks, learnable wavelet transforms, and multi-head attention mechanisms to enhance feature extraction and model performance. The model was trained and evaluated on the APTOS 2019 Blindness Detection dataset, achieving a micro-average accuracy of 0.83 and a macro-average accuracy of 0.73 in the 5-class classification task. In a 4-class classification task, where severe and proliferative DR are merged, the model achieved a micro-average accuracy of 0.87 and a macro-average accuracy of 0.84. The model's interpretability was further enhanced through Explainable AI (XAI) techniques such as LIME, Grad-CAM, and SHAP. The trained model was deployed as a web-based application using Flask, enabling real-time classification of retinal images. The study highlights the model's effectiveness in addressing class imbalance and its potential for early DR diagnosis, thereby enhancing clinical decision support.</p>
+    <p>
+        Diabetic Retinopathy (DR) is a vision-threatening complication of diabetes that requires early and accurate diagnosis.
+        This project introduces a novel Residual Network (ResNet)-based classification model with a custom Balanced Softmax Loss function 
+        to improve performance on imbalanced medical datasets. Enhancements include the integration of Squeeze-and-Excitation blocks, 
+        learnable wavelet filters, and multi-head attention to boost feature discrimination. The model was evaluated using the APTOS 2019 dataset 
+        and achieved strong results in both 5-class and 4-class DR classification tasks. Interpretability was ensured using XAI tools like 
+        Grad-CAM, SHAP, and LIME. A web interface was developed for real-time diagnosis.
+    </p>
 
-    <div class="button-group">
-        <a href="https://happymondaynkanta.github.io/poster/Aaron_Poster.pdf" download>Download Poster</a>
-        <a href="path/to/dataset.zip" download>Download the Dataset</a>
+    <h2>Key Contributions</h2>
+    <ul>
+        <li>Proposed a custom Balanced Softmax Loss to mitigate class imbalance in medical image classification.</li>
+        <li>Integrated SE-blocks, wavelet transforms, and multi-head attention into a ResNet framework for superior feature extraction.</li>
+        <li>Achieved 0.83 (5-class) and 0.87 (4-class) micro-accuracy on the APTOS dataset.</li>
+        <li>Deployed an XAI-enabled Flask web app for real-time DR prediction and clinical interpretability.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+        This project demonstrates how advanced network architecture and loss customization can significantly improve DR classification. 
+        The integration of attention mechanisms and XAI tools makes the model both powerful and interpretable, offering practical support 
+        to ophthalmologists in clinical settings.
+    </p>
+
+    <h2>Limitation</h2>
+    <p>
+        The model's performance is constrained by the limited diversity of the dataset and may not generalize well to other populations or imaging devices. 
+        Additionally, training deep architectures with balanced loss increases training complexity and time.
+    </p>
+
+    <h2>Future Work</h2>
+    <p>
+        Future improvements will involve training with multi-institutional datasets, including other eye conditions such as glaucoma or AMD.
+        The integration of ensemble learning and semi-supervised approaches may further boost classification robustness and generalization.
+    </p>
+
+    <div class="student-profile">
+        👨‍💻 <strong>Student Researcher:</strong> Li Tong (Aaron) is passionate about applying AI in healthcare. 
+        With a background in computer vision and medical imaging, Aaron’s work reflects his drive to build intelligent tools that support early disease diagnosis 
+        and improve patient outcomes. This research was supervised by Dr. Happy Nkanta Monday.
     </div>
 
- <!-- Add additional project details here -->
-
+    <div class="button-group">
+        <a href="https://happymondaynkanta.github.io/poster/Aaron_Poster.pdf" download>📄 Download Poster</a>
+        <a href="path/to/dataset.zip" download>📁 Download Dataset</a>
+    </div>
 </div>
+
+<footer>
+    💡 Developed by the AI Research Team at CDUT | Guided by Dr. Happy Nkanta Monday | 🔍 AI for Vision – Insight that Saves Sight
+</footer>
 
 <script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
-
