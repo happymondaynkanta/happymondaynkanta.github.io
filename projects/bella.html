@@ -1,64 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Class diabetic Retinopathy Classification using Self-Attention Residual Networks | Happy Nkanta Monday</title>
-    <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
-  
-    <style>
-        .project-header {
-            text-align: center;
-            background-color: #d9534f;
-            color: #fff;
-            padding: 20px;
-            font-size: 2em;
-        }
-        .content-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .button-group {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-group a {
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #d9534f;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .button-group a:hover {
-            background-color: #c9302c;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Class Diabetic Retinopathy Classification | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css" />
+  <style>
+    .project-header {
+      text-align: center;
+      background-color: #d9534f;
+      color: #fff;
+      padding: 25px;
+      font-size: 2em;
+    }
+    .content-section {
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 25px;
+      line-height: 1.7;
+      color: #333;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h3 {
+      color: #d9534f;
+    }
+    .student-info {
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 1.05em;
+      color: #444;
+    }
+    .footer {
+      text-align: center;
+      background-color: #343a40;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+    .button-group {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .button-group a {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #d9534f;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button-group a:hover {
+      background-color: #c9302c;
+    }
+  </style>
 </head>
 <body>
 
 <div class="project-header">
-    Multi-Class diabetic Retinopathy Classification using Self-Attention Residual Networks
+  Multi-Class Diabetic Retinopathy Classification using Self-Attention Residual Networks
 </div>
 
 <div class="content-section">
-    <h2>Abstract</h2>
-    <p style="text-align: justify;">Diabetes is one of the most common metabolic diseases (DM) globally, accompanied by mild to severe secondary complications, including diabetic retinopathy (DR), which can damage the retina and lead to vision loss. DR detection is crucial, as early treatment of DR can effectively prevent vision loss in patients. Image processing systems have been developed for diabetic retinopathy (DR) screening to partially address the growing screening demands associated with the increasing diabetic population worldwide, but the inaccuracy of diabetic retinopathy diagnosis remains a key issue. This project aims to enhance diagnostic accuracy by developing a novel convolutional neural network (CNN) model based on residual learning combined with self-attention mechanism, leveraging deep learning. The model achieved significant performance of 81% accuracy. These results underscore the effectiveness of the model in classifying the severity of diabetic retinopathy, indicating a major advancement in diagnostic methods.</p>
+  <h3>Key Contributions</h3>
+  <p style="text-align: justify;">
+    This project introduces a custom convolutional neural network (CNN) architecture enhanced with residual learning and a self-attention mechanism to classify diabetic retinopathy (DR) into multiple severity levels. The novel architecture excels at feature extraction by combining global and local information, overcoming traditional CNN limitations in medical image interpretation. A key contribution lies in handling class imbalance through data augmentation and focal loss, significantly improving minority class detection. Additionally, the team deployed explainable AI (XAI) techniques like Grad-CAM to ensure transparency in model decisions.
+  </p>
 
-    <div class="button-group">
-        <a href="https://happymondaynkanta.github.io/poster/Bella_Poster.pdf" download>Download Poster</a>
-        <a href="path/to/dataset.zip" download>Download the Dataset</a>
-    </div>
+  <h3>Conclusion</h3>
+  <p style="text-align: justify;">
+    The self-attention residual network achieved an accuracy of 81% in multi-class DR classification. This result validates the effectiveness of the architecture for real-world DR screening, enhancing diagnostic reliability and aiding early intervention strategies. The model represents a practical step forward for scalable, AI-powered retinal screening systems.
+  </p>
 
- <!-- Add additional project details here -->
+  <h3>Limitation</h3>
+  <p style="text-align: justify;">
+    Despite the model's promising performance, several limitations were encountered. The dataset, although annotated, had class imbalances that required synthetic augmentation. The model also demands high computational resources during training, which may hinder deployment in low-resource clinical environments.
+  </p>
 
+  <h3>Future Work</h3>
+  <p style="text-align: justify;">
+    Future enhancements will focus on real-time mobile deployment using edge-computing models like MobileNet variants. The integration of multimodal data, including optical coherence tomography (OCT), can also enrich diagnostic precision. Moreover, longitudinal analysis will be explored to predict DR progression over time.
+  </p>
+
+  <div class="student-info">
+    <strong>Student Contributor:</strong> Ma Rui (Bella) brings a strong interest in medical AI and visual computing, aspiring to bridge healthcare and deep learning through research and innovation.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Bella_Poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/dataset.zip" download>📦 Download Dataset</a>
+  </div>
+</div>
+
+<div class="footer">
+  Project supervised by Dr. Happy Nkanta Monday | CDUT Oxford Brookes College &nbsp; | &nbsp; © 2025 All Rights Reserved
 </div>
 
 <script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
-
