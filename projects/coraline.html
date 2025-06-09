@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Image Recognition System | Zhang Jing</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background: #fdfdfd; color: #333; line-height: 1.7; }
+        h1 { color: #6a0572; }
+        h2 { color: #8e44ad; }
+        .section { margin-bottom: 40px; }
+        .button-group { margin-top: 30px; }
+        .button-group a {
+            padding: 10px 20px;
+            background-color: #6a0572;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .button-group a:hover {
+            background-color: #4e0356;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #eee;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flower Image Recognition based on Deep Convolutional Neural Network</h1>
+    <div class="section">
+        <h2>Overview</h2>
+        <p>
+            This project by <strong>Xinyi Wang (Coraline)</strong> focuses on building a flower image recognition system using a deep learning model based on the ResNet-18 architecture.
+            It utilizes a dataset from Kaggle consisting of 1,000 flower images across 10 categories. The images are classified using a convolutional neural network implemented with PyTorch,
+            and the final application includes a GUI built with Tkinter for user interaction.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Key Highlights</h2>
+        <ul>
+            <li>Used ResNet-18 architecture trained with cross-entropy loss and optimized using Adam optimizer.</li>
+            <li>Achieved 96% training accuracy and 84–86.8% validation accuracy.</li>
+            <li>Built a GUI with Tkinter that allows image upload and classification display.</li>
+            <li>Conducted evaluation using metrics like precision, recall, F1-score, and confusion matrix.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Dataset</h2>
+        <p>
+            The dataset includes 1,000 flower images equally split into training (60%), validation (20%), and test (20%) sets. Each image was resized to 256x256x3 for model compatibility.
+        </p>
+    </div>
+    <div class="section">
+        <h2>GUI Implementation</h2>
+        <p>
+            A three-step GUI was implemented to recognize and classify flowers. The user selects an image, views it, and receives a classification result with the flower name displayed.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Limitations and Future Work</h2>
+        <p>
+            Some misclassifications occurred due to image quality and similarities among flower types. Future improvements could include larger and more diverse datasets, advanced CNN architectures,
+            and edge deployment for mobile users.
+        </p>
+    </div>
+
+   <div class="button-group">
+        <a href="https://pan.baidu.com/s/1oKvWZf_0jEb2_8hyfMBYKg" target="_blank">📁 Access Source Code (Code: 0204)</a>
+        <a href="poster_zhangjing.pdf" download>📄 Download Project Poster</a>
+       
+    </div>
+
+    <footer>
+        Developed by Xinyi Wang (Coraline) | Supervised by Dr. Happy Nkanta Monday | CDUT-OBU
+    </footer>
+</body>
+</html>
