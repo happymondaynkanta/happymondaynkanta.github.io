@@ -2,101 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Convolutional Neural Network for Flower Classification - Yang Haoyun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Convolutional Neural Network based Technique for Flower Classification | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2em;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #fdfdfd;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
     }
-    section {
-      margin-bottom: 2em;
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
     }
-    .button-container {
-      margin-top: 1em;
+    h2 {
+      color: #00796b;
     }
-    button {
-      padding: 10px 20px;
-      font-size: 1em;
-      background-color: #3498db;
-      color: white;
-      border: none;
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
       border-radius: 5px;
-      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    button:hover {
-      background-color: #2980b9;
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <h1>Convolutional Neural Network Based Technique for Flower Classification</h1>
-  <p><strong>Author:</strong> Yang Haoyun (Ethan)</p>
 
-  <section>
-    <h2>Abstract</h2>
-    <p>This project explores flower image classification using convolutional neural networks (CNNs), particularly the VGG16 model. By training on the Oxford 17 flower dataset, the model achieved a classification accuracy of 92.04%. The model architecture includes 13 convolutional layers, 5 pooling layers, and 3 fully connected layers followed by a softmax output. ReLU was used as the activation function, and SGD was employed for optimization.</p>
-  </section>
+<div class="project-header">
+  CNN-Based Flower Classification Using VGG16 Deep Learning Architecture
+</div>
 
-  <section>
-    <h2>Introduction</h2>
-    <p>With increasing image data availability, efficient and accurate flower species classification is essential. Traditional manual feature extraction methods have limitations in accuracy and efficiency. Convolutional neural networks offer an automated approach to feature extraction, improving classification performance. VGGNet, developed by Oxford University, enhances classification through deeper layers and smaller convolutional kernels.</p>
-  </section>
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This project focuses on developing a convolutional neural network-based method for flower image classification using the VGG16 model. A dataset of 17 flower species from Oxford’s Visual Geometry Group was used, achieving a classification accuracy of 92.04%. The model uses ReLU activation, SGD optimizer, and 13 convolutional layers followed by 5 pooling layers. A GUI was developed using PyQt5 to make the system accessible for real-time flower recognition.
+  </p>
 
-  <section>
-    <h2>Aim and Objectives</h2>
-    <p><strong>Aim:</strong> Develop a fast and accurate flower classification system using convolutional neural networks.</p>
-    <p><strong>Objectives:</strong></p>
-    <ul>
-      <li>Investigate CNN models for flower classification</li>
-      <li>Select and preprocess suitable datasets</li>
-      <li>Design and train a VGG16-based CNN model</li>
-      <li>Develop a GUI for dataset selection, training, and prediction</li>
-      <li>Evaluate the model using accuracy and loss metrics</li>
-    </ul>
-  </section>
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Applied VGG16 architecture for classifying 17 flower species with 92.04% accuracy.</li>
+    <li>Utilized Oxford VGG Flower Dataset with well-structured data preprocessing and augmentation.</li>
+    <li>Developed a user-friendly PyQt5 GUI for real-time flower classification and model interaction.</li>
+    <li>Visualized training progress using accuracy and loss curves, aiding model evaluation.</li>
+  </ul>
 
-  <section>
-    <h2>Background Review</h2>
-    <p>Related studies have used various CNN architectures such as AlexNet, ResNet, and InceptionV3, alongside data preprocessing techniques to improve recognition accuracy. Techniques like superpixel segmentation, transfer learning, and saliency mapping have proven effective in enhancing model performance.</p>
-  </section>
+  <h2>Conclusion</h2>
+  <p>
+    The study demonstrates the effectiveness of deep CNNs, particularly VGG16, in flower classification tasks. The integrated GUI allows for user engagement and educational use in botanical classification systems.
+  </p>
 
-  <section>
-    <h2>Methodology</h2>
-    <p>The VGG16 model was employed with image preprocessing to match the required 224x224 input size. The training dataset consists of 1088 images, with 272 images for testing. Python, PyTorch, and PyQt5 were used to implement model training, evaluation, and GUI development.</p>
-    <h3>Technologies Used</h3>
-    <ul>
-      <li>Python 3.8, PyTorch 1.7.1, torchvision 0.8.2</li>
-      <li>PyQt5 for GUI</li>
-      <li>Conda for environment management</li>
-      <li>GPU: NVIDIA GeForce RTX 3070 Ti</li>
-    </ul>
-  </section>
+  <h2>Limitation</h2>
+  <p>
+    VGG16 requires significant memory and computational power due to its large number of parameters, making deployment on low-resource devices challenging.
+  </p>
 
-  <section>
-    <h2>Results and GUI Features</h2>
-    <p>The model achieved an accuracy of 92.04% using SGD with a learning rate of 0.001, 32 epochs, and batch size of 32. The GUI allows users to select datasets, train the model, and predict flower types using a user-friendly interface.</p>
-    <ul>
-      <li>Path selection for datasets and model saving</li>
-      <li>Training button to start model training</li>
-      <li>Prediction feature for flower identification</li>
-    </ul>
-  </section>
+  <h2>Future Work</h2>
+  <p>
+    Future improvements include migrating to lightweight architectures like MobileNet for deployment on mobile platforms and expanding the dataset with more flower categories for better generalization.
+  </p>
 
-  <section>
-    <h2>Project Poster</h2>
-    <p>You can view or download the academic poster summarizing this project using the link below:</p>
-    <div class="button-container">
-      <a href="https://pan.quark.cn/s/fa08a9d4e269" target="_blank">
-        <button>Download Poster</button>
-      </a>
-    </div>
-  </section>
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Haoyun Yang is deeply interested in computer vision and its practical applications in everyday classification problems. Under the supervision of Dr. Happy Nkanta Monday, Haoyun implemented and trained the VGG16-based model and developed the interactive interface to support real-time flower identification.
+  </div>
 
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Haoyun_Poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/dataset.zip" download>📁 Download Dataset</a>
+  </div>
+</div>
+
+<footer>
+  🌸 A Project by Haoyun Yang (Ethan) | Supervised by Dr. Happy Nkanta Monday | 🌼 Deep Learning for Botanical Intelligence
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
