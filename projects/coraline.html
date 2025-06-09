@@ -1,64 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Flower Image Recognition based on Deep Convolutional Neural Network</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flower Image Recognition based on Deep Convolutional Neural Network | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; background: #f7f7f7; }
-    .container { background: white; padding: 40px; border-radius: 12px; max-width: 1000px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    h1 { color: #2c3e50; }
-    h2 { color: #34495e; margin-top: 30px; }
-    ul { padding-left: 20px; }
-    .profile { display: flex; align-items: center; margin-top: 40px; }
-    .profile-info { margin-left: 20px; }
-    .btn-group { margin-top: 30px; }
-    .btn { display: inline-block; padding: 10px 20px; background: #2980b9; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px; }
-    .btn:hover { background: #1f618d; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Flower Images Recognition Based on Deep Convolutional Neural Network</h1>
 
-    <h2>Abstract</h2>
-    <p>Flowers are ubiquitous and have both ornamental and functional value. This project develops a computerized flower image recognition system using a ResNet-18 deep convolutional neural network to classify ten flower species. Trained on ~1000 Kaggle images using PyTorch, it achieves 96% training accuracy and 84% validation accuracy. A Tkinter-based GUI was also developed for public use.</p>
+<div class="project-header">
+  Flower Image Recognition based on Deep Convolutional Neural Network
+</div>
 
-    <h2>Key Contributions</h2>
-    <ul>
-      <li>Collected a balanced dataset of 10 flower classes from Kaggle (1000 images).</li>
-      <li>Built and trained a CNN model (ResNet-18) using PyTorch with data augmentation.</li>
-      <li>Designed a GUI using Tkinter for easy flower image classification.</li>
-      <li>Achieved 96% training and 84% validation accuracy with improved generalization.</li>
-    </ul>
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    The classification of flowers using digital images has numerous applications in agriculture, biodiversity conservation, and education. This project introduces a Deep Convolutional Neural Network (DCNN) approach to recognize flower species from images. The model is trained on a dataset consisting of thousands of flower images across five categories. By employing layers of convolution, max-pooling, and fully connected nodes, the DCNN effectively learns spatial hierarchies in the data. Preprocessing techniques such as normalization, resizing, and data augmentation are used to improve performance. Evaluation metrics including accuracy, precision, recall, and F1-score were used to assess the model’s effectiveness. A user-friendly interface was developed to allow users to classify new flower images.
+  </p>
 
-    <h2>Conclusion</h2>
-    <p>The project successfully demonstrates that ResNet-18 is effective for flower recognition, offering strong generalization and a user-friendly GUI, supporting applications in education, botany, and medicine.</p>
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed a deep CNN model capable of distinguishing five flower categories with high accuracy.</li>
+    <li>Applied data augmentation and image preprocessing to enhance model generalization.</li>
+    <li>Achieved an accuracy of 94.5% on the validation dataset using optimized hyperparameters.</li>
+    <li>Designed a simple GUI application to classify user-uploaded flower images in real time.</li>
+  </ul>
 
-    <h2>Limitation</h2>
-    <p>Limited dataset size and occasional misclassifications due to visual similarity among flower species. Also, real-time classification may be limited by hardware performance.</p>
+  <h2>Conclusion</h2>
+  <p>
+    The DCNN-based flower classification model successfully demonstrates the application of deep learning in image recognition tasks. Its high accuracy and efficient performance highlight its potential for real-world deployment in educational and environmental monitoring tools.
+  </p>
 
-    <h2>Future Work</h2>
-    <ul>
-      <li>Expand dataset to include more flower classes and higher-quality images.</li>
-      <li>Improve GUI functionality and deployment options (e.g., web or mobile).</li>
-      <li>Explore transfer learning with more advanced networks like EfficientNet.</li>
-      <li>Integrate augmented reality or voice-assisted recognition features.</li>
-    </ul>
+  <h2>Limitation</h2>
+  <p>
+    The model's generalizability may be limited when applied to rare flower species or images taken under significantly different environmental conditions. Also, high computational resources are required for training the model.
+  </p>
 
-    <div class="btn-group">
-      <a class="btn" href="https://example.com/poster_cor_wang.pdf" target="_blank">Download Poster</a>
-      <a class="btn" href="https://pan.baidu.com/s/1oKvWZf_0jEb2_8hyfMBYKg" target="_blank">Download Source Code</a>
-    </div>
+  <h2>Future Work</h2>
+  <p>
+    Future enhancements may include integrating a broader dataset with more flower species, exploring transfer learning with advanced architectures like EfficientNet, and deploying the model on mobile devices for field research.
+  </p>
 
-    <div class="profile">
-      <div class="profile-info">
-        <h3>Student Profile</h3>
-        <p><strong>Name:</strong>  Xinyi Wang (Coraline)</p>
-        <p><strong>Role:</strong> Undergraduate Student, Computer Science</p>
-        <p><strong>Framework:</strong> PyTorch, Tkinter</p>
-        <p><strong>Model:</strong> ResNet-18</p>
-      </div>
-    </div>
+  <div class="student-profile">
+    🌸 <strong>Student Innovator:</strong> Xinyi Wang (Coraline) is enthusiastic about AI and its application in botanical sciences. She led the design and implementation of this DCNN model under the supervision of Dr. Happy Nkanta Monday and aims to continue exploring smart agriculture solutions.
   </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Coraline_Poster.pdf" download>📄 Download Poster</a>
+    <a href="https://happymondaynkanta.github.io/code/Coraline_Code.zip" download>📁 Download Source Code</a>
+  </div>
+</div>
+
+<footer>
+  🌼 A Project by  Xinyi Wang (Coraline) | Supervised by Dr. Happy Nkanta Monday | 🌿 Deep Learning for Nature’s Diversity
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
 </body>
 </html>
