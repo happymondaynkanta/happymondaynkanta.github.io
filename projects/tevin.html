@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Self-Driving Car | Deep Learning | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="project-header">
+  Self-driving Car in Video Game using Deep Learning Approach
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This project explores the development of a self-driving car system within the video game Grand Theft Auto V using a deep learning approach. Leveraging EfficientNetV2 with LSTM and Transformer encoders, the model was trained on gameplay image sequences and optimized through transfer learning. A GUI developed with Gradio allows users to visualize predictions and model behavior in real time. The model achieved over 70% accuracy on highway scenarios under clear daytime conditions. The system serves as a simulation platform for research, training, and educational purposes, demonstrating the feasibility of using video games to safely and cost-effectively test autonomous driving algorithms.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Designed a deep learning-based autopilot system using EfficientNetV2 with Transformer/LSTM encoders for GTA V.</li>
+    <li>Generated training data via in-game behavior recording and built a custom dataset for transfer learning.</li>
+    <li>Achieved over 70% accuracy in sunny highway conditions; implemented evaluation metrics such as micro and macro accuracy.</li>
+    <li>Developed an interactive Gradio GUI for visualizing model performance and predictions per frame.</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    The self-driving simulation system demonstrates the potential of combining deep learning with gaming platforms for low-risk, low-cost testing of autonomous driving models. With transfer learning and optimized architecture configurations, the system achieves notable performance. The GUI extends accessibility to users lacking high-end hardware for real-time evaluation. However, real-world generalization requires additional sensors, richer datasets, and environmental modeling.
+  </p>
+
+  <h2>Limitation</h2>
+  <p>
+    The trained model is constrained by the synthetic nature of the gaming environment and lacks exposure to complex real-world driving conditions. It cannot detect road compliance elements such as traffic lights or weather-based dynamics. Additionally, evaluation accuracy is bounded by the resolution and scope of the collected dataset.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future extensions include expanding model capabilities to detect traffic signs, handle adverse conditions, and integrate real-time sensor fusion. Enhanced realism via physics-based simulators and integration with multi-modal sensor data will be explored. Deployment to other gaming environments and online collaborative simulations is also envisioned.
+  </p>
+
+  <div class="student-profile">
+    🚗 <strong>Student Innovator:</strong> Rui (Tevin) Liu is passionate about using deep learning for intelligent systems and autonomous vehicles. Tevin designed this project to simulate real-world self-driving scenarios within GTA V, providing a safe platform for experimentation and education. Supervised by Dr. Happy Nkanta Monday, Tevin aims to contribute to research that bridges game environments and AI-driven transport systems.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Tevin_Poster.pdf" download>📄 Download Poster</a>
+    <a href="https://pan.baidu.com/disk/main#/index?category=all&path=%2Fself-driving%20GTA%2Fcode%2Ffinal" target="_blank">📁 View Final Code & Dataset</a>
+  </div>
+</div>
+
+<footer>
+  🎮 A Project by Rui Lui (Tevin) | Supervised by Dr. Happy Nkanta Monday | 🚦 Simulating Safer Autonomous Driving with Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
 
