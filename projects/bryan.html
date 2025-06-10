@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicle Logo Classification | Deep Learning Model | Yi (Bryan) Zhong</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
 
+<div class="project-header">
+  Vehicle Logo Classification using Deep Learning for Traffic Monitoring Systems
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This project enhances Traffic Monitoring and Management Systems (TMMS) through deep learning-based vehicle logo classification. Addressing challenges like variable logo sizes and lighting conditions, we developed a custom CNN architecture combining Depthwise Separable Convolutions, Residual Learning, Inception modules, and Attention Mechanisms. Trained on the VLD-45 dataset (45,000 images across 45 vehicle brands), our model achieves 95.59% training accuracy and 84.93% validation accuracy. The system includes a Tkinter GUI for real-time classification and Grad-CAM visualization, demonstrating robust performance across different vehicle colors and types. This solution provides urban planners and automotive companies with actionable insights into traffic patterns and brand visibility while establishing foundations for advanced vehicle image analysis.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed hybrid CNN architecture (ResNet50 + SE Blocks + Inception + DSCNN) achieving 84.93% validation accuracy on 45-class vehicle logo classification</li>
+    <li>Implemented comprehensive data pipeline with background removal and augmentation to handle real-world variability</li>
+    <li>Optimized model performance through systematic hyperparameter tuning (learning rate: 0.0001, batch size: 32, Adam optimizer)</li>
+    <li>Deployed interactive Tkinter GUI with Grad-CAM visualization for explainable AI in traffic monitoring applications</li>
+    <li>Demonstrated model robustness across different vehicle colors and types through rigorous testing</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    Our Depthwise Inception Residual model significantly advances vehicle logo classification for traffic management systems. The integration of attention mechanisms and multi-scale feature extraction enables robust performance across diverse real-world conditions. The deployed GUI system bridges the gap between research and practical application, offering urban planners and automotive brands valuable insights. With an 84.93% validation accuracy on the challenging VLD-45 dataset, this work establishes a strong foundation for intelligent transportation systems and brand analytics.
+  </p>
+
+  <h2>Limitation</h2>
+  <p>
+    Performance decreases with extreme lighting variations or heavily obscured logos. The model requires high-resolution inputs (256×256) and shows slight accuracy drops (∼5%) when tested on vehicle types not represented in the training data. Computational requirements for training are substantial, needing GPUs with at least 16GB memory.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future directions include: 1) Mobile deployment for edge computing in traffic cameras, 2) Integration with license plate recognition for complete vehicle profiling, 3) Federated learning to improve generalization across geographic regions, and 4) Semi-supervised learning to leverage unlabeled traffic camera footage. Additional work on few-shot learning could address rare vehicle brands.
+  </p>
+
+  <div class="student-profile">
+    🚗 <strong>Student Innovator:</strong> Yi (Bryan) Zhong specializes in computer vision applications for intelligent transportation systems. Under Dr. Happy Nkanta Monday's mentorship, Bryan developed this advanced logo classification system combining cutting-edge deep learning techniques with practical urban mobility solutions. His work focuses on making AI systems more interpretable and deployable in real-world infrastructure.
+  </div>
+
+  <div class="button-group">
+    <a href="path/to/Bryan_Poster.pdf" download>📄 Download Poster</a>
+    <a href="https://drive.google.com/file/d/1saCpzdlxY9OaLIV-YLASVZvHxyvJURdc/view" target="_blank">📁 Access Dataset</a>
+    <a href="https://github.com/BryanZhong/Vehicle-Logo-Classification" target="_blank">💻 View Code</a>
+  </div>
+</div>
+
+<footer>
+  🚦 A Project by Yi Zhong (Bryan)  | Supervised by Dr. Happy Nkanta Monday | 🛣️ Pioneering Smarter Transportation Through Computer Vision
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
