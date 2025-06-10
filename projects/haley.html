@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A Convolutional Neural Network Approach for the Recognition of Traffic Signs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Convolutional Neural Network Approach for the Recognition of Traffic Signs | Happy Nkanta Monday</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
     }
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .project-header {
+      text-align: center;
+      background-color: #1565c0;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
       border-radius: 10px;
-    }
-    h1 {
-      color: #004085;
-      border-bottom: 2px solid #cce5ff;
-      padding-bottom: 0.5rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
     }
     h2 {
-      color: #0056b3;
+      color: #1565c0;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-left: 5px solid #1565c0;
+      margin-top: 30px;
+      font-style: italic;
     }
     .button-group {
-      margin-top: 2rem;
+      text-align: center;
+      margin: 30px 0;
     }
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      margin: 0.5rem;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #1565c0;
+      color: #fff;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    .btn:hover {
-      background-color: #0056b3;
+    .button-group a:hover {
+      background-color: #0d47a1;
     }
     footer {
       text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #6c757d;
+      background-color: #0d47a1;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1>A Convolutional Neural Network Approach for the Recognition of Traffic Signs</h1>
-    <p><strong>Surname:</strong> Wu<br><strong>First Name:</strong> Yile</p>
 
-    <h2>Abstract</h2>
-    <p>Driverless cars are an increasingly popular topic these days... [rest of abstract]</p>
+<div class="project-header">
+  A Convolutional Neural Network Approach for the Recognition of Traffic Signs
+</div>
 
-    <h2>Introduction</h2>
-    <p><strong>Background:</strong> Traffic Sign Recognition (TSR) is becoming more and more promising... [background details]</p>
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    Driverless cars are an increasingly popular topic these days. And the traffic sign recognition system, which enables the automatic identification of traffic signs for driverless car system, also generates major discussion. As a matter of fact, the system may be able to save the lives of drivers if their make mistakes in identifying of traffic signs. Therefore, the traffic sign recognition system can be used not only in driverless cars, but also as an aid to help drivers identify traffic signs on the road. To achieve this goal, the deep learning technology, convolutional neural networks is used to identify traffic signs for drivers, and it is required to be equipped with the quality of high accuracy and high efficiency. Therefore, the lightweight convolutional neural network model, MobileNetV2 is used to be developed as the core in this project since it has the advantage of less computation and reducing latency. Also, to better fit the dataset, the attached classifiers are added. The aim of this article is to explore the process of generating a lightweight CNN model for traffic sign identification, which is taken from the Chinese traffic sign dataset, and to design the graphical user interface for the model to be better understood and operated. As a result, the model achieves the training accuracy of 88.10% and the validation accuracy of 93.75%. And the training loss of 40.78%, validation loss of 17.05.
+  </p>
 
-    <h2>Convolutional Neural Networks</h2>
-    <p>Deep Learning or Deep Neural Network refers to multi-layer Artificial Neural Networks (ANN)... [CNN explanation]</p>
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>MobileNetV2 Integration: Developed a lightweight CNN model using MobileNetV2 for efficient and accurate traffic sign recognition suitable for mobile and real-time applications.</li>
+    <li>Custom Classifier Design: Augmented the pretrained MobileNetV2 with a custom classifier, including batch normalization and dense layers, to better fit the Chinese Traffic Sign dataset.</li>
+    <li>High Validation Accuracy: Achieved 93.75% validation accuracy, demonstrating strong performance despite dataset imbalance.</li>
+    <li>GUI Implementation: Built an interactive Tkinter-based GUI with ttkbootstrap integration to allow users to upload and classify traffic sign images intuitively.</li>
+    <li>Performance Comparison: Compared model performance against various state-of-the-art techniques like YOLOv3, YOLOv5, SSD-MobileNet, and CNN with Temporal Error Compensation.</li>
+  </ul>
 
-    <!-- Sections for Input Layer, Convolutional Layer, Pooling Layer, Fully-Connected Layer, etc. -->
+  <h2>Conclusion</h2>
+  <p>
+   The project demonstrates that a lightweight MobileNetV2-based CNN can effectively classify traffic signs with high validation accuracy (93.75%) and moderate training accuracy (88.10%). The designed GUI enhances accessibility and usability for non-technical users, supporting real-world applications in autonomous and assisted driving systems. The approach provides a practical and computationally efficient solution to real-time TSR challenges, making it suitable for embedded systems and driver assistance applications.
+  </p>
 
-    <h2>Aim</h2>
-    <p>The aim of this project is to develop a TSR system based on a MobileNetV2 convolutional neural network model.</p>
+  <h2>Limitation</h2>
+  <p>
+    Certain traffic sign classes (e.g., rare signs like “Speed Limit 5”) are underrepresented, affecting overall model generalizability. Although performance is high, it does not outperform more advanced models like YOLOv5 in detection tasks. MobileNetV2 sacrifices some accuracy for speed and lightness, which may limit its performance on more complex or cluttered scenes.
+  </p>
 
-    <h2>Objectives</h2>
-    <ul>
-      <li>Finish a background review of the existing CNN technology and current literature.</li>
-      <li>Design the CNN architecture.</li>
-      <li>Preprocess the dataset, using data augmentation.</li>
-      <li>Train and test the CNN architecture with the Chinese traffic sign dataset.</li>
-      <li>Evaluate the model using training and validation accuracy/loss.</li>
-      <li>Design and implement a GUI for the model.</li>
-      <li>Explain the work to a relevant audience.</li>
-    </ul>
+  <h2>Future Work</h2>
+  <p>
+    Explore hybrid models or attention mechanisms to further improve accuracy without compromising speed. Test the system in real driving conditions with video streams to evaluate real-time inference speed and reliability.
+  </p>
 
-    <div class="button-group">
-      <a href="poster_yile_wu.pdf" class="btn" download>Download Poster</a>
-      <a href="report_yile_wu.pdf" class="btn" download>Download Full Report</a>
-    </div>
+  <div class="student-profile">
+    🚗 <strong>Student Researcher:</strong> Kirk Wang is focused on applying deep learning to real-time transportation challenges. Under the supervision of Dr. Happy Nkanta Monday, this project reflects his commitment to creating safer, AI-powered roads through innovation.
   </div>
 
-  <footer>
-    ☀️ A Project by Yile Wu (Haley) | Supervised by Dr. Happy Nkanta Monday | ⚡ Empowering Intelligence Traffic through Deep Learning
-  </footer>
-</body>
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Kirk_Poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/code.zip" download>💾 Download Source Code</a>
+  </div>
+</div>
 
+<footer>
+  🚦  A Project by Yile Wu (Haley) | Supervised by Dr. Happy Nkanta Monday | ⚡ Empowering Intelligence Traffic through Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
 </html>
+
+
 
