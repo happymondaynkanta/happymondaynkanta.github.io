@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Depthwise Inception Model | Rice Leaf Classification | Xian Lai</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
 
+<div class="project-header">
+  Enhanced Depthwise Inception Model of Residual Learning for Rice Leaf Classification
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    Rice is an essential element of agriculture and has a substantial impact on the worldwide food supply. Various leaf diseases subsequently affected the quality of rice production. The indistinguishable character of symptoms has been a major hindrance in the sector. This study proposed a tailored Convolutional Neural Network (CNN) model for precise identification and classification of common diseases that impact rice leaves. The model employs depth-separable convolution techniques on the Inception-Residual network architecture. The paper analyzed 2,627 images of rice leaves, which were categorized into six unique classifications: Bacterial Leaf Blight, Brown Spot, Healthy, Leaf Blast, Leaf Scald, and Narrow Brown Spot. The performance and training of datasets containing six prevalent rice leaf diseases were evaluated using three pre-trained models (VGG16, ResNet50, and InceptionV3), together with the recommended CNN architecture. Hyperparameter optimization and data augmentation are used to train the most optimal model. The customized Convolutional Neural Network (CNN) model attained the utmost level of precision on the dataset for categorizing six distinct categories of rice leaf diseases, achieving a score of 91.23%. A study on accuracy, precision, recall, and F1-score shown that customized models outperform others in terms of performance. The experiments carried out on a complex dataset consisting of leaves from eight different rice species shown the smallest decrease in the performance of the tailored model.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed a Depthwise Inception Residual CNN model achieving 91.23% accuracy for rice leaf disease classification.</li>
+    <li>Evaluated performance against VGG16, ResNet50, and InceptionV3 models with rigorous hyperparameter tuning.</li>
+    <li>Implemented data augmentation techniques to enhance model generalization across diverse rice leaf datasets.</li>
+    <li>Deployed a PyQt5 GUI application for real-time rice leaf disease classification with interpretability features (Grad-CAM, LIME).</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    The Depthwise Inception Residual model demonstrates superior performance in classifying rice leaf diseases compared to standard pre-trained architectures. By combining depth-separable convolutions with residual connections and Inception modules, the model achieves robust feature extraction while maintaining computational efficiency. The integration of interpretability methods and a user-friendly GUI enhances practical applicability for agricultural stakeholders.
+  </p>
+
+  <h2>Limitation</h2>
+  <p>
+    The model's performance decreases by approximately 20% when applied to datasets with additional disease categories (8-class vs 6-class). Performance may also vary with images captured under different environmental conditions or from different rice cultivars not represented in the training data.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future directions include expanding the dataset to cover more disease variants and environmental conditions, developing mobile deployment for field use, and integrating weather data for predictive disease modeling. Federated learning approaches could also be explored to improve generalization across geographic regions while maintaining data privacy.
+  </p>
+
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Xian Lai is passionate about applying deep learning to solve agricultural challenges. Xian developed this advanced CNN architecture under the mentorship of Dr. Happy Nkanta Monday, combining computer vision expertise with practical agricultural applications. He aims to bridge the gap between AI research and real-world farming solutions.
+  </div>
+
+  <div class="button-group">
+    <a href="path/to/Xian_Poster.pdf" download>📄 Download Poster</a>
+    <a href="https://www.kaggle.com/datasets/dedeikhsandwisaputra/rice-leafs-disease-dataset/data" target="_blank">📁 Access Dataset</a>
+  </div>
+</div>
+
+<footer>
+  🌾 A Project by Xian Lai (Brian) | Supervised by Dr. Happy Nkanta Monday | 🤖 Advancing Agricultural AI Through Innovative Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
