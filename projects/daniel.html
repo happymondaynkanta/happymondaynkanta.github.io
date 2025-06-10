@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced DR Classification | Daniel Chen</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="project-header">
+  Enhanced Diabetic Retinopathy Classification through Depthwise Separable CNN, Residual Learning, and Inception Technique Integration
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    Diabetic retinopathy (DR) is a severe complication of diabetes mellitus that can lead to vision loss. This project enhances DR classification using a novel ensemble of deep convolutional neural networks integrating VGG16, ResNet50, and InceptionV3. Techniques such as depthwise separable convolutions, residual learning, and inception modules were incorporated to improve accuracy and efficiency. With a dataset from Kaggle, preprocessing and data augmentation were applied, and results showed notable improvements—particularly after restructuring the classification into binary categories. The final ensemble model, deployed via a PyQt-based GUI, achieved a peak F1 score of 0.946, indicating high sensitivity and specificity in distinguishing DR from non-DR cases.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed and compared three CNN models (VGG16, ResNet50, InceptionV3) for DR image classification.</li>
+    <li>Constructed a hybrid ensemble model integrating the strengths of VGG16 and ResNet50.</li>
+    <li>Performed extensive preprocessing and augmentation to handle class imbalance and improve generalization.</li>
+    <li>Deployed the final model with a user-friendly PyQt GUI for practical clinical testing.</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    This project demonstrates the efficacy of CNN-based ensemble learning for medical image classification, especially for diabetic retinopathy. While the initial multi-class models showed moderate performance, restructuring the task into a binary classification significantly enhanced sensitivity and overall accuracy, making the model suitable for early DR screening tools.
+  </p>
+
+  <h2>Limitation</h2>
+  <p>
+    The model's performance relies heavily on well-annotated data, and generalizability may be limited when deployed on unseen datasets from varied imaging devices. The ensemble strategy also introduces higher computational complexity.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future research will explore transfer learning from medical-specific datasets, integration with mobile health platforms, and real-time DR classification embedded in fundus camera hardware. Additionally, federated learning and cross-dataset adaptation will be investigated.
+  </p>
+
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Lihan Chen (Daniel) is a driven researcher in AI for medical diagnostics. Under the mentorship of Dr. Happy Nkanta Monday, he focused on CNN integration strategies for diabetic retinopathy classification, aiming to reduce misdiagnosis and improve clinical workflows. His ambition is to develop intelligent assistive tools for ophthalmology.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Daniel_Poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/dataset.zip" download>📁 Download Dataset</a>
+  </div>
+</div>
+
+<footer>
+  👁️ A Project by Lihan Chen (Daniel) | Supervised by Dr. Happy Nkanta Monday | 🧠 Enhancing Clinical Intelligence with Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
 
