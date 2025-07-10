@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deep Learning for Heart Disease Classification | Yong Wang</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+    .model-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
 
+<div class="project-header">
+  Deep Learning Based Heart Disease Classification Using Multimodal ECG Signal and Images
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    Heart diseases are the leading cause of death globally, making effective diagnostic tools essential for early detection and treatment. Electrocardiograms (ECG), which record the electrical activity of the heart, are crucial for diagnosing various cardiac conditions. This project aims to develop advanced deep learning models capable of multi-label heart disease classification using both ECG signals and images. The proposed models demonstrated high accuracy and robustness in heart disease classification, applying techniques like Depthwise Separable Convolution, ResNet, and Efficient Channel Attention (ECA). Specifically, the models achieved a remarkable accuracy of 98.92% on the MIT-BIH Single Lead ECG dataset for arrhythmia detection, and an impressive Micro AUC of 89% on the PTB-XL 12-Lead ECG dataset for more complex multi-class tasks. The project successfully integrated advanced convolutional neural network techniques with ECG signal and image processing, establishing a new standard in cardiac health diagnostics.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed specialized CNN models (ResECANet and ResDSCNet) for ECG classification achieving 98.92% accuracy on single-lead and 89% AUC on 12-lead datasets</li>
+    <li>Implemented advanced signal processing techniques including Pan-Tompkins algorithm, SMOTE for class balancing, and Continuous Wavelet Transform for feature extraction</li>
+    <li>Created a novel multi-lead hybrid segmentation scheme for 12-lead ECG image processing</li>
+    <li>Developed comprehensive interpretability analysis using SHAP, LIME, and Grad-CAM methods</li>
+    <li>Implemented practical deployment solutions including GUI application and Raspberry Pi edge computing</li>
+  </ul>
+
+  <h2>Methodology</h2>
+  <p>
+    The project employed three main models: ResECANet for 1D ECG signal classification, VGG16 for 2D CWT feature maps, and ResDSCNet for multi-label classification of 12-lead ECG images. Key techniques included:
+  </p>
+  <ul>
+    <li>Signal processing with Pan-Tompkins algorithm and Continuous Wavelet Transform</li>
+    <li>Class balancing using SMOTE oversampling and undersampling</li>
+    <li>Advanced CNN architectures combining ResNet, Depthwise Separable Convolution, and Efficient Channel Attention</li>
+    <li>Rigorous evaluation with 5-fold cross validation and multiple performance metrics</li>
+  </ul>
+  
+  <img src="https://example.com/model_architecture.jpg" alt="System Architecture Diagram" class="model-image">
+
+  <h2>Results</h2>
+  <p>
+    The models demonstrated exceptional performance across different ECG classification tasks:
+  </p>
+  <ul>
+    <li><strong>ResECANet (1D ECG signals):</strong> 98.92% accuracy, 99.47% F1-score on MIT-BIH dataset</li>
+    <li><strong>VGG16 (2D CWT features):</strong> 98.56% accuracy on wavelet-transformed ECG signals</li>
+    <li><strong>ResDSCNet (12-lead images):</strong> 89% Micro AUC for multi-label classification on PTB-XL dataset</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    The developed deep learning models demonstrate significant potential for automated ECG analysis and heart disease diagnosis. By combining advanced signal processing with innovative neural network architectures, the project achieved state-of-the-art performance on standard ECG datasets. The integration of interpretability methods and practical deployment solutions enhances the clinical applicability of these models for real-world cardiac diagnostics.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future extensions include incorporating multi-spectral image analysis, real-time cloud deployment with edge AI support, and integrating life-cycle cost analysis for predictive maintenance. Cross-domain transfer learning and federated learning will also be explored to generalize performance across varying regions and patient populations.
+  </p>
+
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Yong Wang is passionate about applying deep learning to medical diagnostics. Yong led this comprehensive project under the mentorship of Dr. Happy Nkanta Monday, demonstrating exceptional skills in signal processing, deep learning architecture design, and practical system implementation. With a strong foundation in both technical and clinical aspects of ECG analysis, Yong aspires to develop AI-driven solutions that bridge the gap between advanced technology and practical healthcare applications.
+  </div>
+
+  <div class="button-group">
+    <a href="https://github.com/aklovey/CHC6096-Final-Project" target="_blank">📄 Project Code</a>
+    <a href="path/to/dataset.zip" download>📁 Download Dataset</a>
+  </div>
+</div>
+
+<footer>
+  ❤️ A Project by Yong Wang | Supervised by Dr. Happy Nkanta Monday | ⚡ Advancing Cardiac Diagnostics Through Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
