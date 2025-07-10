@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ResNet Face Recognition | Access Control System | Xiao ZhengMing</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
 
+<div class="project-header">
+  Deep Learning-Based Access Control System Using Face Recognition Technology
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This study focuses on developing a facial recognition access control system using deep learning techniques to enhance security measures. Traditional access control methods, reliant on physical keys or cards, are prone to security breaches due to loss or duplication. In response, this research aims to design a more secure and efficient system by employing Residual Neural Network (ResNet) for facial recognition. The system is evaluated based on its accuracy in identifying registered individuals and its response time for real-time processing. The results demonstrate a high accuracy rate of 86.9% and fast processing time, making it suitable for practical applications in various settings, such as office buildings, residential complexes, and restricted public areas. This study highlights the potential of deep learning in improving access control systems and contributing to the field of security technology.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed a robust face recognition system using ResNet-34 architecture achieving 86.9% accuracy</li>
+    <li>Implemented MTCNN for precise face detection and alignment in real-world conditions</li>
+    <li>Created a complete Flask-based web application with user registration, recognition, and access logging</li>
+    <li>Designed an intuitive user interface with visual feedback for access control decisions</li>
+    <li>Established comprehensive testing protocols validating system reliability and accuracy</li>
+  </ul>
+
+  <h2>Technical Implementation</h2>
+  <p>
+    The system combines multiple advanced technologies: ResNet-34 for feature extraction, MTCNN for face detection and alignment, and Flask for web application framework. The frontend uses HTML5, CSS3, and JavaScript for responsive interface design, while SQLite serves as the database backend. The model was trained on a dataset of 105 celebrities with 17,534 face images, achieving high recognition accuracy through careful preprocessing and alignment techniques.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    The implemented facial recognition access control system demonstrates the practical application of deep learning in security technology. By combining ResNet's powerful feature extraction with MTCNN's precise detection capabilities, the system provides a secure, efficient alternative to traditional access control methods. The web-based interface makes the technology accessible while maintaining robust security standards.
+  </p>
+
+  <h2>Limitations</h2>
+  <p>
+    The system's performance may be affected by extreme lighting conditions or significant facial obstructions. Additionally, the accuracy could potentially decrease with a much larger user base beyond the tested scale. Privacy considerations regarding facial data storage and processing must also be carefully addressed in real-world deployments.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future enhancements could include liveness detection to prevent spoofing attacks, integration with other biometric modalities for multi-factor authentication, and cloud-based deployment for scalability. Additional improvements in model architecture and training techniques could further boost recognition accuracy, especially for diverse demographic groups.
+  </p>
+
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Xiao ZhengMing is passionate about applying deep learning to solve real-world security challenges. Under the mentorship of Dr. Happy Nkanta Monday, Xiao developed this comprehensive access control system that combines cutting-edge computer vision with practical web application development. His work demonstrates the potential of AI technologies to enhance security systems while improving user convenience.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Shaw_poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/demo.zip" download>🎥 System Demo</a>
+  </div>
+</div>
+
+<footer>
+  🔒 A Project by Xiao ZhengMing | Supervised by Dr. Happy Nkanta Monday | ⚡ Advancing Security Through Intelligent Face Recognition
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
