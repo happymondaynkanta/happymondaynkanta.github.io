@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faster R-CNN for Mask Detection | Lin Xiyue</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="project-header">
+  Faster R-CNN: Deep Learning-based Mask Wearing Detection in Public Spaces
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    Since the COVID-19 outbreak, face masks have played a crucial role in preventing virus transmission in public spaces. This project applies Faster R-CNN with a ResNet-50 + FPN backbone to develop an efficient facemask detection system. The model was trained on a custom dataset with three classes—mask, no mask, and false mask—using optimized hyperparameters (LR = 0.005, SGD). Evaluation on key metrics such as mAP, F1-score, and LAMR showed that the model achieved 98.40% mAP and nearly perfect detection for “false mask” class. The system was deployed with a PyQt GUI that supports both image and video inputs.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Created a customized 3-class facemask detection dataset in Pascal VOC format with 3954 labeled images.</li>
+    <li>Designed and evaluated four Faster R-CNN backbones: MobileNetV2, VGG16, ResNet50, and ResNet50+FPN.</li>
+    <li>Achieved highest performance using ResNet50+FPN (mAP = 98.40%) with optimized learning rate and SGD optimizer.</li>
+    <li>Implemented interpretability via EigenCAM and AblationCAM to visualize model focus during prediction.</li>
+    <li>Developed an intuitive GUI using PyQt with real-time mask detection in both image and video modes.</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    This project successfully demonstrates that Faster R-CNN with an enhanced backbone (ResNet50+FPN) is capable of accurately detecting mask-wearing status across various conditions. With robust performance and practical interpretability tools, the system offers real-world application potential in public health monitoring.
+  </p>
+
+  <h2>Limitation</h2>
+  <p>
+    The system's video detection operates at a low frame rate (≈1.5 fps), limiting real-time deployment efficiency. Additionally, performance on diverse camera angles and lighting conditions may require further generalization.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Planned improvements include optimizing real-time video processing using lighter models (e.g., YOLOv7), deploying on edge devices, and extending the system for additional PPE detection (gloves, face shields) using multi-label object detection.
+  </p>
+
+  <div class="student-profile">
+    🧠 <strong>Student Innovator:</strong> Lin Xiyue is a final-year student with a strong interest in computer vision and real-time deep learning applications. Under the supervision of Dr. Happy Nkanta Monday, she focused on designing a robust facemask detection system with high real-world applicability. Xiyue aims to further her research in AI-powered public health and safety systems.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Lucy_poster.pdf" download>📄 Download Poster</a>
+    <a href="https://github.com/yangbiantai/Project.git" target="_blank">💻 GitHub Project</a>
+  </div>
+</div>
+
+<footer>
+  😷 A Project by Lin Xiyue | Supervised by Dr. Happy Nkanta Monday | 🛡️ Promoting Public Safety with AI & Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
 
