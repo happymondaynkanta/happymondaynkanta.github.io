@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CNN Food Classification | Ensemble Deep Learning Model | Emil Chen</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+    .model-stats {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
 
+<div class="project-header">
+  Ensemble CNN Model for Food Image Classification on Small Datasets
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This study addresses the challenge of food image classification using small-scale datasets by developing an ensemble Convolutional Neural Network (CNN) model. Focusing on a curated subset of the Food-101 dataset (5,000 images across 5 categories), the project evaluates three CNN architectures: ResNet, MobileNetV2, and InceptionV3. Through transfer learning and ensemble techniques, the model achieves 92.7% accuracy, demonstrating CNN's effectiveness even with limited data. The research implements advanced training strategies including learning rate scheduling and data augmentation, while providing model interpretability through Grad-CAM, LIME, and SHAP visualizations. A user-friendly GUI enables practical deployment, showcasing applications in dietary management and food quality assessment. The project highlights how carefully designed CNN ensembles can overcome data scarcity challenges in food recognition tasks.
+  </p>
+
+  <h2>Key Innovations</h2>
+  <ul>
+    <li>Developed an ensemble CNN model combining ResNet, MobileNetV2, and InceptionV3 with weighted averaging</li>
+    <li>Achieved 92.7% classification accuracy on a small dataset (5,000 images, 5 categories) through optimized transfer learning</li>
+    <li>Implemented comprehensive interpretability methods (Grad-CAM, LIME, SHAP) to explain model decisions</li>
+    <li>Created an intuitive PyQt5 GUI for practical food classification deployment</li>
+    <li>Conducted extensive hyperparameter optimization including batch size, learning rate, and optimizer selection</li>
+  </ul>
+
+  <div class="model-stats">
+    <h3>Model Performance Comparison</h3>
+    <p><strong>MobileNetV2:</strong> 87% accuracy | <strong>ResNet:</strong> 87% accuracy | <strong>InceptionV3:</strong> 85% accuracy</p>
+    <p><strong>Ensemble Model:</strong> 92.7% accuracy (Adam optimizer, learning rate 0.001, batch size 32)</p>
+  </div>
+
+  <h2>Technical Implementation</h2>
+  <p>
+    The system combines multiple advanced CNN architectures with careful preprocessing and augmentation strategies. Images are resized to 299x299 pixels and normalized using ImageNet statistics. The ensemble model weights predictions from each architecture based on their individual test accuracy (ResNet: 0.35, MobileNetV2: 0.33, InceptionV3: 0.32). Training utilizes the Adam optimizer with a learning rate scheduler that reduces the rate by 0.1 when validation loss plateaus. Data augmentation includes random resized crops, horizontal flips, rotations, and color jitter to improve generalization from the limited dataset.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    This project successfully demonstrates that carefully designed CNN ensembles can achieve excellent classification performance even with small datasets. The combination of transfer learning, strategic data augmentation, and model interpretability techniques provides a robust framework for food image analysis. The implemented GUI makes these advanced capabilities accessible for practical applications in dietary monitoring and food quality assessment.
+  </p>
+
+  <h2>Limitations</h2>
+  <p>
+    The current model is limited to five food categories from the Food-101 dataset. Performance may decrease when applied to more diverse or complex food images not represented in the training data. The ensemble approach also requires more computational resources than single-model solutions. Future work could explore more efficient ensemble methods and expand the category coverage.
+  </p>
+
+  <h2>Future Directions</h2>
+  <p>
+    Future enhancements could include: expanding to more food categories while maintaining performance, developing mobile-friendly versions of the model, incorporating real-time classification capabilities, and integrating nutritional information with classification results. Additional work could also explore few-shot learning techniques to further reduce data requirements.
+  </p>
+
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Emil Chen is passionate about applying deep learning to solve real-world problems in food technology and dietary health. Under the mentorship of Dr. Happy Nkanta Monday, Emil developed this comprehensive food classification system that combines cutting-edge computer vision with practical application development. His work demonstrates how AI can transform our relationship with food through intelligent recognition systems.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Emil_poster.pdf" download>📄 Download Poster</a>
+    <a href="https://github.com/Vetair/FoodClassificaton" target="_blank">💻 View Code</a>
+  </div>
+</div>
+
+<footer>
+  🍽️ A Project by Emil Chen | Supervised by Dr. Happy Nkanta Monday | 🥗 Advancing Dietary Intelligence Through Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
