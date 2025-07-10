@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SRResNet with Attention | Image Super-Resolution | Zijun Liu</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #3f51b5;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #3f51b5;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e8eaf6;
+      padding: 15px;
+      border-left: 5px solid #3f51b5;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #3f51b5;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #303f9f;
+    }
+    footer {
+      text-align: center;
+      background-color: #303f9f;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="project-header">
+  Enhanced SRResNet with Attention: Optimizing Image Super-Resolution
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This project explores the enhancement of image resolution using Super-Resolution Residual Neural Network (SRResNet) with attention mechanisms. The aim is to reconstruct high-resolution images from low-resolution inputs more accurately than traditional upscaling methods. Using benchmark datasets like Set5, Set14, and BSD100, the model was implemented in PyTorch and evaluated using PSNR, MSE, and SSIM metrics. The enhanced SRResNet with attention achieved superior performance, improving textural detail and overall clarity while addressing limitations in conventional interpolation approaches.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed an enhanced SRResNet model integrated with attention blocks for precise detail recovery.</li>
+    <li>Implemented the model using PyTorch and evaluated on Set5, Set14, and BSD100 datasets.</li>
+    <li>Demonstrated significant improvement over bicubic interpolation in PSNR, MSE, and SSIM.</li>
+    <li>Provided visual insights through attention maps, frequency spectrum plots, and difference maps.</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    The enhanced SRResNet model demonstrates its ability to outperform traditional interpolation and base SRResNet in image upscaling tasks. Attention mechanisms helped emphasize critical details in the reconstruction process. The model provides a strong foundation for future innovations in image processing, particularly for applications requiring high-fidelity image recovery.
+  </p>
+
+  <h2>Limitation</h2>
+  <p>
+    The model requires substantial computational resources and may not generalize well to extremely noisy or out-of-domain low-resolution inputs. Also, while PSNR improved, the SSIM comparison indicates that structural consistency remains a challenge.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future improvements include integrating multi-scale attention modules, applying domain adaptation techniques, exploring lightweight models for edge devices, and extending to video super-resolution. A user-friendly interface and real-time web deployment are also planned.
+  </p>
+
+  <div class="student-profile">
+    🧠 <strong>Student Innovator:</strong> Zijun Liu is an aspiring computer vision researcher with a focus on deep learning and intelligent image restoration. Under the guidance of Dr. Happy Nkanta Monday, Zijun combined SRResNet with attention to push the frontier of image enhancement. He is passionate about AI-powered graphics and plans to explore vision transformers for future projects.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Jonas_poster.pdf" download>📄 Download Poster</a>
+    <a href="https://github.com/JonasLiu03/FinalProject" target="_blank">🔗 View Code on GitHub</a>
+  </div>
+</div>
+
+<footer>
+  📸 A Project by Zijun Liu | Supervised by Dr. Happy Nkanta Monday | Elevating Image Clarity Through Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
 
