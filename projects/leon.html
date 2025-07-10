@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Super-Resolution with RCAN for Malaria Cell Classification | Leon Yu</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #00796b;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #00796b;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-left: 5px solid #00796b;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+    .model-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+    }
+    .metric-highlight {
+      background-color: #e0f7fa;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
 
+<div class="project-header">
+  Super-Resolution with RCAN for Improved Malaria Cell Classification: A Performance Evaluation
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This study investigates the use of Residual Channel Attention Networks (RCAN) for 2x super-resolution in malaria cell imaging to enhance diagnostic capabilities. Traditional microscopy techniques often yield variable results contingent upon operator proficiency. RCAN was employed to upscale malaria cell images, allowing for extraction of more detailed features. The effectiveness was quantitatively assessed using PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index Measure). A comprehensive comparison of classification models demonstrated the superiority of super-resolved images, with our ensemble model achieving perfect classification (100% accuracy, 1.0 F1-score) on enhanced images versus 92.07% on originals. The model was successfully deployed via ONNX Runtime for real-world applications including static images, video analysis, and live camera feeds, demonstrating robust generalization across media types.
+  </p>
+
+  <div class="metric-highlight">
+    <h3>Key Performance Metrics</h3>
+    <ul>
+      <li><strong>Super-Resolution Quality:</strong> Average PSNR 32.63dB, SSIM 0.9002</li>
+      <li><strong>Classification Accuracy:</strong> 100% on super-resolved vs 92.07% on original images</li>
+      <li><strong>Processing Speed:</strong> 45 FPS for real-time camera analysis</li>
+      <li><strong>Model Efficiency:</strong> 99.998% accuracy with batch size 32</li>
+    </ul>
+  </div>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Implemented RCAN-based 2x super-resolution achieving PSNR 32.63dB and SSIM 0.9002 on malaria cell images</li>
+    <li>Developed an ensemble CNN model with attention mechanisms achieving perfect classification (100% accuracy) on enhanced images</li>
+    <li>Conducted comprehensive interpretability analysis using CAM, SHAP, and LIME to validate model decisions</li>
+    <li>Created practical deployment solutions including web-based interface and ONNX Runtime optimization</li>
+    <li>Demonstrated real-time processing capabilities (45 FPS) for clinical applications</li>
+  </ul>
+
+  <h2>Methodology</h2>
+  <p>
+    The project employed a two-stage approach combining super-resolution enhancement with advanced classification:
+  </p>
+  
+  <h3>1. Super-Resolution with RCAN</h3>
+  <p>
+    The RCAN architecture consists of four key components: shallow feature extraction, deep feature extraction via residual-in-residual (RIR) blocks, upsampling, and reconstruction. The model was trained using L1 pixel loss over 3200 iterations, with channel attention mechanisms focusing on diagnostically relevant features.
+  </p>
+  
+  <img src="https://example.com/rcan_architecture.jpg" alt="RCAN Architecture" class="model-image">
+
+  <h3>2. Classification Models</h3>
+  <p>
+    We developed and compared four CNN architectures:
+  </p>
+  <ul>
+    <li><strong>Custom Ensemble Model:</strong> Combining factorized inception blocks with SE attention</li>
+    <li><strong>ShuffleNetV2:</strong> Lightweight architecture optimized for mobile deployment</li>
+    <li><strong>ResNet18:</strong> Baseline residual network for comparison</li>
+    <li><strong>RegNet:</strong> Regularized network for balanced performance</li>
+  </ul>
+
+  <h2>Results</h2>
+  <p>
+    The models demonstrated exceptional performance across different evaluation scenarios:
+  </p>
+  
+  <h3>Super-Resolution Performance</h3>
+  <ul>
+    <li>Average PSNR: 32.63dB (vs 28.42dB for bicubic interpolation)</li>
+    <li>SSIM: 0.9002 indicating excellent structural preservation</li>
+    <li>Visual analysis confirmed enhanced cellular details critical for diagnosis</li>
+  </ul>
+  
+  <h3>Classification Performance</h3>
+  <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+    <tr style="background-color: #00796b; color: white;">
+      <th style="padding: 10px; border: 1px solid #ddd;">Model</th>
+      <th style="padding: 10px; border: 1px solid #ddd;">Original Accuracy</th>
+      <th style="padding: 10px; border: 1px solid #ddd;">SR Accuracy</th>
+      <th style="padding: 10px; border: 1px solid #ddd;">Improvement</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd;">Ensemble Model</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">92.07%</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">100%</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">+7.93%</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 10px; border: 1px solid #ddd;">ShuffleNetV2</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">91.69%</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">100%</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">+8.31%</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd;">RegNet</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">92.30%</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">100%</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">+7.70%</td>
+    </tr>
+  </table>
+
+  <h2>Conclusion</h2>
+  <p>
+    The integration of RCAN super-resolution with advanced CNN classifiers demonstrates significant potential for automated malaria diagnosis. Key findings include:
+  </p>
+  <ul>
+    <li>Super-resolution enhances classification accuracy by 7-8% across all models</li>
+    <li>Our custom ensemble model achieves perfect classification on enhanced images</li>
+    <li>Real-time processing at 45 FPS enables practical clinical deployment</li>
+    <li>Interpretability analysis confirms the model focuses on diagnostically relevant features</li>
+  </ul>
+
+  <h2>Future Work</h2>
+  <p>
+    Future extensions include:
+  </p>
+  <ul>
+    <li>Integration with mobile microscopy platforms for field deployment</li>
+    <li>Extension to other parasitic infections using similar methodology</li>
+    <li>Development of cloud-based analysis for resource-constrained settings</li>
+    <li>Incorporation of clinical metadata to improve diagnostic accuracy</li>
+  </ul>
+
+  <div class="student-profile">
+    🔬 <strong>Student Innovator:</strong> Leon Yu is passionate about applying cutting-edge computer vision techniques to medical diagnostics. Under the mentorship of Dr. Happy Nkanta Monday, Leon developed this comprehensive solution combining super-resolution and deep learning classification, demonstrating exceptional skills in both theoretical understanding and practical implementation. With a strong focus on real-world applicability, Leon aims to bridge the gap between advanced AI research and practical healthcare solutions.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Leon_poster.pdf" download>📄 Download Poster</a>
+    <a href="https://github.com/Darkmoon1337/Project" target="_blank">📄 Project Code</a>
+    <a href="path/to/dataset.zip" download>📁 Download Dataset</a>
+  </div>
+</div>
+
+<footer>
+    🦟 A Project by Leon Yu | Supervised by Dr. Happy Nkanta Monday | 🚀 Advancing Malaria Diagnosis Through Super-Resolution and Deep Learning
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
