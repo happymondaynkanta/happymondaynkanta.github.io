@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ensemble Models for Fruit Classification | Yao Qing Wang</title>
+  <link rel="stylesheet" href="https://happymondaynkanta.github.io/css/semantic.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .project-header {
+      text-align: center;
+      background-color: #8e24aa;
+      color: #fff;
+      padding: 30px;
+      font-size: 1.9em;
+    }
+    .content-section {
+      max-width: 860px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    h2 {
+      color: #8e24aa;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .student-profile {
+      background-color: #f3e5f5;
+      padding: 15px;
+      border-left: 5px solid #8e24aa;
+      margin-top: 30px;
+      font-style: italic;
+    }
+    .button-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button-group a {
+      padding: 12px 24px;
+      margin: 6px;
+      background-color: #8e24aa;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #6a1b9a;
+    }
+    footer {
+      text-align: center;
+      background-color: #6a1b9a;
+      color: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="project-header">
+  Migrating Ensemble Model with Attention for Advanced Fruit Classification
+</div>
+
+<div class="content-section">
+  <h2>Abstract</h2>
+  <p>
+    This project explores the development and deployment of a robust deep learning ensemble model for accurate fruit classification, aimed at enhancing both curiosity-driven identification and smart agricultural automation. Traditional methods often rely on individual CNN models, which struggle in complex classification scenarios. To address this, two ensemble models were developed—one leveraging transfer learning with attention mechanisms. The models integrated AlexNet, ResNet-50, and EfficientNet-B7 using a weighted approach. The attention-enhanced ensemble showed significant improvements in performance, with enhanced interpretability via CAM, SHAP, and LIME visualizations. Real-time deployment using ONNX Runtime and web-based prediction achieved high-speed and privacy-preserving inference.
+  </p>
+
+  <h2>Key Contributions</h2>
+  <ul>
+    <li>Developed two ensemble deep learning models combining AlexNet, ResNet-50, and EfficientNet-B7 with and without attention.</li>
+    <li>Introduced SE attention mechanism to enhance fruit classification accuracy and generalization.</li>
+    <li>Achieved 93.38% accuracy using weighted integration with transfer learning.</li>
+    <li>Integrated interpretability analysis using SHAP, LIME, and CAM for transparency.</li>
+    <li>Deployed model on ONNX Runtime and web interface with real-time prediction capability.</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    The proposed ensemble model combining attention and transfer learning substantially improves fruit classification performance. Real-time deployment in various environments—from images to live camera feeds—demonstrates the practicality and efficiency of the system. Interpretability techniques reveal the model’s decision pathways, offering transparency critical for real-world adoption in agriculture and health-related applications.
+  </p>
+
+  <h2>Limitation</h2>
+  <p>
+    Although the attention-enhanced model outperforms others, it shows limitations with ambiguous fruit types like cherry vs. black cherry. Performance degradation may occur with underrepresented fruit classes or in poor lighting conditions.
+  </p>
+
+  <h2>Future Work</h2>
+  <p>
+    Future directions include expanding the dataset to include more rare fruits, integrating multilingual fruit information systems, and embedding the model into lightweight edge devices for offline use in rural areas. Incorporating federated learning can enhance generalizability across regions.
+  </p>
+
+  <div class="student-profile">
+    🍇 <strong>Student Innovator:</strong> Wang Yao Qing is a machine learning enthusiast focusing on practical applications of AI in agriculture and food safety. Under the mentorship of Dr. Happy Nkanta Monday, she developed an advanced fruit classification model integrating interpretability and deployment, aiming to democratize smart agriculture tools for everyday users.
+  </div>
+
+  <div class="button-group">
+    <a href="https://happymondaynkanta.github.io/poster/Edison_poster.pdf" download>📄 Download Poster</a>
+    <a href="path/to/project_dataset.zip" download>📁 Download Dataset</a>
+  </div>
+</div>
+
+<footer>
+  🍎 A Project by Wang Yao Qing | Supervised by Dr. Happy Nkanta Monday | 🌱 AI-Driven Tools for Smart Agriculture and Healthy Choices
+</footer>
+
+<script src="https://happymondaynkanta.github.io/css/semantic.min.js"></script>
+</body>
+</html>
 
