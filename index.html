@@ -152,6 +152,95 @@
   <title>
     Happy Nkanta Monday
     </title>
+
+<-- New -->
+
+<style>
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #1f3bda;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.container-tl {
+  padding: 20px 30px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container-tl::after {
+  content: ' ';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: #fff;
+  border: 4px solid #1f3bda;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left-tl {
+  left: 0;
+}
+
+.right-tl {
+  left: 50%;
+}
+
+.right-tl::after {
+  left: -10px;
+}
+
+.content-tl {
+  padding: 20px;
+  background-color: #f9f9f9;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline h4 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #1f3bda;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container-tl {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container-tl::after {
+    left: 15px;
+  }
+
+  .right-tl {
+    left: 0%;
+  }
+}
+</style>
+
+
 </head>
 
 <body>
@@ -548,6 +637,53 @@ function myFunction() {
   </div>
 </div>
 
+
+  <--- New -->
+  <div class="ui horizontal divider">Academic & Professional Timeline</div>
+
+<div class="timeline">
+
+  <div class="container-tl left-tl">
+    <div class="content-tl">
+      <h4>🎓 Ph.D. in Computer Science</h4>
+      <p>University of Electronic Science and Technology of China (UESTC), 2021</p>
+    </div>
+  </div>
+
+  <div class="container-tl right-tl">
+    <div class="content-tl">
+      <h4>🏅 Best Paper Award</h4>
+      <p>2021 PRAI Conference for COVID-19 Diagnostic Model</p>
+    </div>
+  </div>
+
+  <div class="container-tl left-tl">
+    <div class="content-tl">
+      <h4>🧪 Postdoctoral Researcher</h4>
+      <p>UESTC - Focus on AI for Medical Imaging, 2022</p>
+    </div>
+  </div>
+
+  <div class="container-tl right-tl">
+    <div class="content-tl">
+      <h4>📚 Associate Professor</h4>
+      <p>Chengdu University of Technology Oxford Brookes College, 2022 – Present</p>
+    </div>
+  </div>
+
+  <div class="container-tl left-tl">
+    <div class="content-tl">
+      <h4>🌍 Summer School Lead Instructor</h4>
+      <p>AI-driven Sustainable Urban Development, CDUT International Summer School 2025</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+    
   
 
   </div>
